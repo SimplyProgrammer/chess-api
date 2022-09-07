@@ -1,0 +1,6 @@
+package org.ugp.api.chess.engine;
+
+public class SimpleChessEngine 
+{
+	public final ChessPiece
+}

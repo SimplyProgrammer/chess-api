@@ -1,0 +1,36 @@
+package org.ugp.api.chess;
+
+import java.io.InputStream;
+
+import org.ugp.serialx.JsonSerializer;
+
+import io.javalin.plugin.json.JsonMapper;
+
+public class JavalinSerialXJson implements JsonMapper {
+
+	
+
+	@Override
+	public String toJsonString(Object obj) {
+		return null;
+		
+	}
+
+	@Override
+	public InputStream toJsonStream(Object obj) {
+		return null;
+
+	}
+
+	@Override
+	public <T> T fromJsonString(String json, Class<T> targetClass) {
+		return null;
+
+	}
+
+	@Override
+	public <T> T fromJsonStream(InputStream json, Class<T> targetClass) {
+		return null;
+
+	}
+}

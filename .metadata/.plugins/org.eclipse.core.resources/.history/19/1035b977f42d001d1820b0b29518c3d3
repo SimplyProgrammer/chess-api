@@ -1,0 +1,18 @@
+package org.ugp.api.chess.engine;
+
+public class ChessPiece 
+{
+	public static enum Type 
+	{
+		K,
+		Q,
+		B,
+		N,
+		R,
+		P
+	}
+	
+	public ChessPiece() {
+		System.out.println(Type.valueOf("k"));
+	}
+}

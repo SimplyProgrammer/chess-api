@@ -1,0 +1,14 @@
+package org.ugp.api.chess.engine;
+
+public class Pawn extends ChessPiece {
+
+	@Override
+	public int[][] getMovmentMetrix() {
+		return new int[][] {
+			{0}, {0}, {0},
+			{0}, {0}, {0},
+			{0}, {1}, {0}
+		};
+	}
+
+}

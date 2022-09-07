@@ -1,0 +1,20 @@
+package org.ugp.api.chess.enginev2;
+
+
+public class Bishop extends ChessPiece{
+	public Bishop(Board board, int color, int xLoc, int yLoc){
+		super(board, "b", color, xLoc, yLoc);
+	}
+	
+	public boolean canMoveTo(int xPosition, int yPosition){
+		if(canMoveGenerics(xPosition,yPosition)){
+			return bishopMovement(xPosition, yPosition);
+		}
+		return false;
+	}
+	
+	
+	private boolean bishopMovement(int xPosition, int yPosition){
+		return isMovingDiagonal(xPosition, yPosition);
+	}
+}

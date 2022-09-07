@@ -1,0 +1,10 @@
+package org.ugp.api.chess.engine;
+
+import lombok.Data;
+
+@Data
+public class ChessPiece 
+{
+	protected int color; 
+	protected String type;
+}

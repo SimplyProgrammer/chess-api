@@ -1,0 +1,16 @@
+package org.ugp.api.chess.enginev2;
+
+public class King extends ChessPiece{
+	public King(SimpleChessEngine board, int color, int xLoc, int yLoc) {
+		super(board, "K", color, xLoc, yLoc);
+	}
+	
+	public boolean canMoveTo(int x, int y) {
+		return super.canMoveTo(x, y) && kingMovement(x, y);
+	}
+	
+	protected boolean kingMovement(int x, int y) {
+
+		return Math.abs(x - this.getX()) == 1 || Math.abs(y - this.getY()) == 1;
+	}
+}

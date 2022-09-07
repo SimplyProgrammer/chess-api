@@ -1,0 +1,18 @@
+package org.ugp.api.chess.engine;
+
+public class Queen extends ChessPiece {
+
+	public Queen(int color) {
+		super(color, "b");
+	}
+	
+	@Override
+	public int[][] getMovmentMetrix(/*int fromX, int fromY, int toX, int toY*/) {
+		return new int[][] {
+			{9, 0, 9},
+			{0, 0, 0}, 
+			{9, 0, 9}
+		};
+	}
+
+}

@@ -1,0 +1,15 @@
+package org.ugp.api.chess.engine;
+
+public class SimpleChessEngine 
+{
+	protected ChessPiece[][] pieces = {
+		{}
+		{}
+		{}
+		{}
+		{}
+		{}
+		{}
+		{}
+	};
+}

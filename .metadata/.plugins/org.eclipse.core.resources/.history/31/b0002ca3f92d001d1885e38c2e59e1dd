@@ -1,0 +1,18 @@
+package org.ugp.api.chess.engine;
+
+public class Knight extends ChessPiece {
+
+	public Knight(int color) {
+		super(color, "p");
+	}
+	
+	@Override
+	public int[][] getMovmentMetrix(/*int fromX, int fromY, int toX, int toY*/) {
+		return new int[][] {
+			{0},
+			{0}, 
+			{1}
+		};
+	}
+
+}

@@ -1,0 +1,18 @@
+package org.ugp.api.chess.engine;
+
+public class Rook extends ChessPiece {
+
+	public Rook(int color) {
+		super(color, "r");
+	}
+	
+	@Override
+	public int[][] getMovmentMetrix(int fromX, int fromY, int toX, int toY, ChessPiece[][] board) {
+		return new int[][] {
+			{9, 0, 9},
+			{0, 0, 0}, 
+			{9, 0, 9}
+		};
+	}
+
+}

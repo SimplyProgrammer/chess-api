@@ -1,0 +1,13 @@
+
+package org.ugp.api.chess;
+
+import io.javalin.Javalin;
+
+public class HelloWorld 
+{
+	public static void main(String[] args) {
+		Javalin app = Javalin.create().start(8888);
+		var asasad = 5;
+		app.get("/", ctx -> ctx.result("Hello World " + ++i[0]));
+	}
+}

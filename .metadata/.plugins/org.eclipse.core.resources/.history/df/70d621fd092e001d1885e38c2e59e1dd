@@ -1,0 +1,12 @@
+package org.ugp.api.chess.enginev2;
+
+
+public class Bishop extends ChessPiece {
+	public Bishop(SimpleChessEngine board, int color, int x, int yLoc) {
+		super(board, "b", color, x, yLoc);
+	}
+	
+	public boolean canMoveTo(int x, int y) {
+		return super.canMoveTo(x,y) && super.canMoveTo(x,y);
+	}
+}

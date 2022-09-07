@@ -1,0 +1,36 @@
+package org.ugp.api.chess.engine;
+
+public class SimpleChessEngine 
+{
+	protected ChessPiece[][] pieces = {
+		{new Rook(0), new Knight(0), new Bishop(0), new Queen(0), new King(0), new Bishop(0), new Knight(0), new Rook(0)},
+		{new Pawn(0), new Pawn(0), new Pawn(0), new Pawn(0), new Pawn(0), new Pawn(0), new Pawn(0), new Pawn(0)},
+		new ChessPiece[8],
+		new ChessPiece[8],
+		new ChessPiece[8],
+		new ChessPiece[8],
+		{new Pawn(1), new Pawn(1), new Pawn(1), new Pawn(1), new Pawn(1), new Pawn(1), new Pawn(1), new Pawn(1)},
+		{new Rook(1), new Knight(1), new Bishop(1), new Queen(1), new King(1), new Bishop(1), new Knight(1), new Rook(1)},
+	};
+	
+	@Override
+	public String toString() {
+		String str = "";
+		for (ChessPiece[] chessPieces : pieces) {
+			for (ChessPiece piece : chessPieces) {
+				str += piece == null ? '#' : piece;
+			}
+			str += "\n";
+		}
+		return str;
+	}
+	
+	public void print() {
+		for (ChessPiece[] chessPieces : pieces) {
+			for (ChessPiece piece : chessPieces) {
+				System.out.print(piece == null ? '#' : piece);
+			}
+			System.out.println();
+		}
+	}
+}

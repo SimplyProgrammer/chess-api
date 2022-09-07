@@ -1,0 +1,40 @@
+package org.ugp.api.chess.engine;
+
+
+public abstract class ChessPiece implements Cloneable
+{
+	protected int color; 
+	protected String type;
+	public int initX, initY;
+	
+	public ChessPiece() {
+		this(0);
+	}
+	
+	public ChessPiece(int color) {
+		this(color, "P");
+	}
+	
+	public ChessPiece(int color, String type) {
+		this.color = color;
+		this.type = type;
+	}
+	
+	public abstract int[] getMovmentMetrix(int fromX, int fromY, int toX, int toY);
+	
+	public int getColor() {
+		return color;
+	}
+	
+	public void setColor(int color) {
+		this.color = color;
+	}
+	
+	public String getType() {
+		return type;
+	}
+	
+	public void setType(String type) {
+		this.type = type;
+	}
+}

@@ -1,0 +1,22 @@
+package org.ugp.api.chess.enginev2;
+
+public class Queen extends ChessPiece{
+	public Queen(SimpleChessEngine board, int color, int xLoc, int yLoc) {
+		super(board, "q", color, xLoc, yLoc);
+	}
+	
+	public boolean canMoveTo(int xPosition, int yPosition) {
+		if (super.canMoveTo(xPosition,yPosition)) {
+			return queenMovement(xPosition, yPosition);
+		}
+		return false;
+	}
+	
+	
+	private boolean queenMovement(int xPosition, int yPosition) {
+		if (isMovingStraight(xPosition, yPosition) ||
+				isMovingDiagonal(xPosition, yPosition))
+				return true;
+		return false;
+	}
+}

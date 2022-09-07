@@ -1,0 +1,7 @@
+package org.ugp.api.chess.engine;
+
+public class ChessPiece 
+{
+	protected int color; 
+	protected String type;
+}

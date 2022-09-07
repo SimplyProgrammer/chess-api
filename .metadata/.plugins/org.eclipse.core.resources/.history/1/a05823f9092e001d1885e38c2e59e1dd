@@ -1,0 +1,53 @@
+package org.ugp.api.chess.enginev2;
+
+public class Pawn extends ChessPiece{
+	
+	public Pawn(SimpleChessEngine board, int color, int xLoc, int yLoc) {
+		super(board, "p", color, xLoc, yLoc);
+	}
+	
+	public boolean canMoveTo(int x, int y) {
+		if (super.canMoveTo(x,y)) {
+			return pawnMovement(x, y);
+		}
+		return false;
+	}
+	
+	
+	protected boolean pawnMovement(int x, int y) {
+		int one_step;
+		int two_step;
+		ChessPiece target = chessBoard.pieceAt(x, y);
+		
+		if (this.getColor() == BLACK) {
+			one_step = 1;
+			two_step = 2;
+		}
+		else{
+			one_step = -1;
+			two_step = -2;
+		}
+		
+		
+		if (x - this.getX() == one_step) {
+			
+			if (y == this.getY() && target == null) {
+				return true;
+			}
+			
+			if (Math.abs(this.getY() - y) == 1 && target != null) {
+				return true;
+			}
+		}
+		
+		else if (!hasMoved) {
+			if (x - this.getX() == two_step) {
+				if (y == this.getY() && target == null) {
+					return true;
+				}
+			}
+		}
+
+		return false;
+	}
+}

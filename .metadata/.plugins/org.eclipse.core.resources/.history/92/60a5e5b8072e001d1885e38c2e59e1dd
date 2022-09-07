@@ -1,0 +1,19 @@
+package org.ugp.api.chess.enginev2;
+
+public class Rook extends ChessPiece {
+	public Rook(SimpleChessEngine board, int color, int xLoc, int yLoc) {
+		super(board, "r", color, xLoc, yLoc);
+	}
+	
+	public boolean canMoveTo(int xPosition, int yPosition) {
+		if (super.canMoveTo(xPosition,yPosition)) {
+			return rookMovement(xPosition, yPosition);
+		}
+		return false;
+	}
+	
+	
+	protected boolean rookMovement(int xPosition, int yPosition) {
+		return isMovingStraight(xPosition, yPosition);
+	}
+}

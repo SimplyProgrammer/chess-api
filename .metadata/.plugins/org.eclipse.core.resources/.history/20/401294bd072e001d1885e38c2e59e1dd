@@ -1,0 +1,23 @@
+package org.ugp.api.chess.enginev2;
+
+public class Knight extends ChessPiece{
+	public Knight(SimpleChessEngine board, int color, int xLoc, int yLoc) {
+		super(board, "n", color, xLoc, yLoc);
+	}
+	
+	public boolean canMoveTo(int x, int yPosition) {
+		if (super.canMoveTo(x,yPosition)) {
+			return knightMovement(x, yPosition);
+		}
+		return false;
+	}
+	
+	
+	protected boolean knightMovement(int x, int yPosition) {
+		if (Math.abs(this.getX() - x) == 2 && Math.abs(this.getY() - yPosition) == 1)
+			return true;
+		if (Math.abs(this.getX() - x) == 1 && Math.abs(this.getY() - yPosition) == 2)
+			return true;
+		return false;
+	}
+}

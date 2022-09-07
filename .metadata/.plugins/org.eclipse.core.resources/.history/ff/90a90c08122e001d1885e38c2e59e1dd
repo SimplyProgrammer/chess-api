@@ -1,0 +1,27 @@
+
+package org.ugp.api.chess;
+
+import org.ugp.api.chess.enginev2.ChessPiece;
+import org.ugp.api.chess.enginev2.SimpleChessEngine;
+
+import io.javalin.Javalin;
+
+public class HelloWorld 
+{
+	public static void main(String[] args) {
+		var app = Javalin.create().start(8888);
+		
+		
+		SimpleChessEngine engine = new SimpleChessEngine(8, 8);
+		for (int x = 0; x < 8; x++) {
+			engine.put("p", ChessPiece.BLACK, x, 1);
+			engine.put("p", ChessPiece.BLACK, x, 6);
+		}
+		
+		System.out.println(engine.pieceAt(5, 3));
+		
+		app.get("/", ctx -> {
+			
+		});
+	}
+}

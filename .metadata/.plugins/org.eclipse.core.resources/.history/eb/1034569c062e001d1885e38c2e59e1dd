@@ -1,0 +1,65 @@
+package org.ugp.api.chess.enginev2;
+
+public class SimpleChessEngine {
+	private ChessPiece[][] chessBoard;
+	
+	public SimpleChessEngine(int xDimension, int yDimension) {
+		chessBoard = new ChessPiece[xDimension][yDimension];
+	}
+	
+	public boolean isEmptyPosition(int xPosition, int yPosition) {
+		if (isInBounds(xPosition, yPosition)) {
+			if (chessBoard[xPosition][yPosition] == null)
+				return true;
+		}
+		return false;
+	}
+	
+	public boolean isInBounds(int xPosition, int yPosition) {
+		if (xPosition < getXDimension() && xPosition >= 0 &&
+				yPosition < getYDimension() && yPosition >= 0)
+			return true;
+		return false;
+	}
+	
+	public ChessPiece pieceAt(int xPosition, int yPosition) {
+		if (isInBounds(xPosition, yPosition)) {
+			return chessBoard[xPosition][yPosition];
+		}
+		return null;
+	}
+	
+	@Override
+	public String toString() {
+		String str = "";
+		for (int x = 0; x < chessBoard.length; x++) {
+			for (int y = 0; y < chessBoard[x].length; y++) {
+				ChessPiece piece = chessBoard[x][y];
+				str += piece == null ? '#' : piece;
+			}
+			str += "\n";
+		}
+		return str;
+	}
+	
+	public int getXDimension() {
+		return chessBoard[0].length;
+	}
+	
+	public int getYDimension() {
+		return chessBoard.length;
+	}
+	
+	public ChessPiece[][] getChessBoard() {
+		return chessBoard;
+	}
+
+	public void removeFromBoard(ChessPiece removePiece) {
+		chessBoard[removePiece.getX()][removePiece.getY()] = null;
+	}
+
+	public void placePiece(ChessPiece chessPiece, int xPosition, int yPosition) {
+		if (isInBounds(xPosition, yPosition))
+			chessBoard[xPosition][yPosition] = chessPiece;
+	}
+}

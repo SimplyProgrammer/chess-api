@@ -1,0 +1,9 @@
+package org.ugp.api.chess;
+
+import org.ugp.serialx.JsonSerializer;
+
+import io.javalin.plugin.json.JsonMapper;
+
+public class JavalinJson extends JsonSerializer implements JsonMapper {
+
+}
