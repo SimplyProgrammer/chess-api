@@ -6,9 +6,11 @@ import org.ugp.serialx.protocols.SelfSerializable;
 public class SimpleChessEngine implements SelfSerializable
 {
 	protected ChessPiece[][] pieces;
+	protected int onTurn;
 	
-	public SimpleChessEngine(int width, int height) {
+	public SimpleChessEngine(int width, int height, int onTurn) {
 		pieces = new ChessPiece[width][height];
+		this.onTurn = onTurn;
 	}
 	
 	@Override
@@ -21,8 +23,8 @@ public class SimpleChessEngine implements SelfSerializable
 	@Override
 	public String toString() {
 		String str = "";
-		for (int y = 0; y < getHeight(); y++) {
-			for (int x = 0; x < getWidth(); x++) {
+		for (int x = 0; x < getWidth(); x++) {
+			for (int y = 0; y < getHeight(); y++) {
 				ChessPiece piece = pieces[x][y];
 				str += piece == null ? '#' : piece;
 			}
@@ -31,10 +33,10 @@ public class SimpleChessEngine implements SelfSerializable
 		return str;
 	}
 	
-	public int[][] getMovmentMetrixOf(int px, int py) {
+	public int[][] getMovmentMetrix(int px, int py) {
 		int[][] metrix = new int[getWidth()][getHeight()];
 		
-		ChessPiece piece = pieceAt(px, py);
+		ChessPiece piece = get(px, py);
 		for (int x = 0; x < getWidth(); x++) {
 			for (int y = 0; y < getHeight(); y++) {
 				if (piece.canMoveTo(x, y))
@@ -45,8 +47,23 @@ public class SimpleChessEngine implements SelfSerializable
 		return metrix;
 	}
 	
+	public boolean isOnTurn(int color) {
+		return onTurn == color;
+	}
+	
+	public boolean isOnTurn(int x, int y) {
+		ChessPiece piece = get(x, y);
+		return piece != null && isOnTurn(piece.color);
+	}
+	
 	public boolean isEmpty(int x, int y) {
 		return isInBounds(x, y) && pieces[x][y] == null;
+	}
+	
+	public void move(int fromX, int fromY, int toX, int toY) {
+		if (isInBounds(toX, toY) && isOnTurn(fromX, fromY)) {
+			remove(fromX, fromY).moveTo(toX, toY);
+		}
 	}
 	
 	public boolean isInBounds(int x, int y) {
@@ -54,8 +71,18 @@ public class SimpleChessEngine implements SelfSerializable
 			   y < getHeight() && y >= 0;
 	}
 	
-	public ChessPiece pieceAt(int x, int y) {
+	public ChessPiece get(int x, int y) {
 		return isInBounds(x, y) ? pieces[x][y] : null; 
+	}
+	
+	public ChessPiece remove(int x, int y) {
+		if (isInBounds(x, y))
+		{
+			ChessPiece piece = get(x, y);
+			pieces[x][y] = null;
+			return piece;
+		}
+		return null;
 	}
 
 	public void remove(ChessPiece removePiece) {

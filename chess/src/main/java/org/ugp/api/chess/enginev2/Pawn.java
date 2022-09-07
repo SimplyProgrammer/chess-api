@@ -9,6 +9,6 @@ public class Pawn extends ChessPiece
 	public boolean canMoveTo(int x, int y) {
 		int step = (getColor() == BLACK ? 1 : -1) * (getMoveCount() > 0 ? 1 : 2);
 		
-		return super.canMoveTo(x,y) && y - getY() <= step && myBoard.pieceAt(x, y) != null;
+		return super.canMoveTo(x,y) && y - getY() <= step && myBoard.get(x, y) != null;
 	}
 }

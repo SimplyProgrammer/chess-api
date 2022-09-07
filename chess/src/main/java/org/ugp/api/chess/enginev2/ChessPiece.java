@@ -40,24 +40,25 @@ public class ChessPiece implements SelfSerializable
 		if (!myBoard.isInBounds(x, y))
 			return false;
 		
-		ChessPiece piece = myBoard.pieceAt(x, y);
+		ChessPiece piece = myBoard.get(x, y);
 		if (piece == null || piece.getColor() != this.color) 
 			return true;
 		return false;
 	}
 	
-	public void moveTo(int x, int y) {	
-		if (myBoard.pieceAt(x, y) == this)
+	public ChessPiece moveTo(int x, int y) {	
+		if (myBoard.get(x, y) == this)
 			myBoard.remove(this);
 		this.x = x;
 		this.y = y;
 		
-		ChessPiece target = myBoard.pieceAt(x, y);
+		ChessPiece target = myBoard.get(x, y);
 		if (target != null) 
 			kill();
 		
 		myBoard.put(this, x, y);
 		moveCount++;
+		return this;
 	}
 	
 	public void kill() {
@@ -103,7 +104,7 @@ public class ChessPiece implements SelfSerializable
 			
 			smallerVal++;
 			for(; smallerVal < largerVal; smallerVal++) {
-				if (myBoard.pieceAt(currX, smallerVal) != null) {
+				if (myBoard.get(currX, smallerVal) != null) {
 					return false;
 				}
 			}
@@ -125,7 +126,7 @@ public class ChessPiece implements SelfSerializable
 			
 			smallerVal++;
 			for(; smallerVal < largerVal; smallerVal++) {
-				if (myBoard.pieceAt(smallerVal, currY) != null) {
+				if (myBoard.get(smallerVal, currY) != null) {
 					return false;
 				}
 			}
@@ -170,7 +171,7 @@ public class ChessPiece implements SelfSerializable
 			
 			
 			for(;xStart < xFinish; xStart++, yStart++) {
-				if (myBoard.pieceAt(xStart, yStart) != null) {
+				if (myBoard.get(xStart, yStart) != null) {
 					return false;
 				}
 			}
