@@ -6,6 +6,7 @@ import org.ugp.serialx.protocols.SelfSerializable;
 public class ChessPiece implements SelfSerializable
 {
 	public static final int BLACK = 0, WHITE = 1;
+	public static final String KING = "k", QUEEN = "q", BISHOP = "b", ROOK = "r", KNIGHT = "n", PAWN = "p";
 	
 	protected int x, y;
 	protected int color;
@@ -41,7 +42,7 @@ public class ChessPiece implements SelfSerializable
 			return false;
 		
 		ChessPiece piece = myBoard.get(x, y);
-		if (piece == null || piece.getColor() != this.color) 
+		if (piece == null || piece.getColor() != getColor()) 
 			return true;
 		return false;
 	}
@@ -83,12 +84,11 @@ public class ChessPiece implements SelfSerializable
 	}
 
 	protected boolean isMovingStraight(int x, int y) {
-		int currX = this.getX();
-		int currY = this.getY();
+		int currX = getX();
+		int currY = getY();
 		
 		int smallerVal;
 		int largerVal;
-		
 		
 		if (currX == x) {
 			if (currY > y) {
@@ -138,30 +138,65 @@ public class ChessPiece implements SelfSerializable
 
 	
 	protected boolean isMovingDiagonal(int x, int y) {
-		int xStart = 0;
-		int yStart = 0;
-		int xFinish = 1;
+//		int myX = getX(), myY = getY();
+//		if (Math.abs(x - myX) == Math.abs(y - myY)) {
+//			int longerSide = myBoard.getLongerSide();
+//
+//			for (int i = 1; i < longerSide; i++) { //goto top right
+//				if (!myBoard.isInBounds(myX + i, myY - i))
+//					continue;
+//				System.out.println((myX + i) + " " + (myY - i));
+//				if (myBoard.get(myX + i, myY - i) != null)
+//					return false;
+//			}
+//			
+//			for (int i = 1; i < longerSide; i++) { //goto top left
+//				if (!myBoard.isInBounds(myX - i, myY - i))
+//					continue;
+//				if (myBoard.get(myX - i, myY - i) != null)
+//					return false;
+//			}
+//			
+//			for (int i = 1; i < longerSide; i++) { //goto bot right
+//				if (!myBoard.isInBounds(myX + i, myY + i))
+//					continue;
+//				if (myBoard.get(myX + i, myY + i) != null)
+//					return false;
+//			}
+//			
+//			for (int i = 1; i < longerSide; i++) { //goto bot left
+//				if (!myBoard.isInBounds(myX - i, myY + i))
+//					continue;
+//				if (myBoard.get(myX - i, myY + i) != null)
+//					return false;
+//			}
+//			
+//			return true;
+//		}
+//		
+//		return false;
 		
-		int xTotal = Math.abs(x - this.getX());
-		int yTotal = Math.abs(y - this.getY());
-		
-		if (xTotal == yTotal) {
-			if (x < this.getX()) {
+		if (Math.abs(x - getX()) == Math.abs(y - getY())) {
+			int xStart = 0;
+			int yStart = 0;
+			int xFinish = 1;
+			
+			if (x < getX()) {
 				xStart = x;
-				xFinish = this.getX();
+				xFinish = getX();
 			}
-			else if (x > this.getX()) {
-				xStart = this.getX();
+			else if (x > getX()) {
+				xStart = getX();
 				xFinish = x;
 			}
 			else
 				return false;
 			
-			if (y < this.getY()) {
+			if (y < getY()) {
 				yStart = y;
 			}
-			else if (y > this.getY()) {
-				yStart = this.getY();
+			else if (y > getY()) {
+				yStart = getY();
 			}
 			else
 				return false;
@@ -169,8 +204,7 @@ public class ChessPiece implements SelfSerializable
 			xStart++;
 			yStart++;
 			
-			
-			for(;xStart < xFinish; xStart++, yStart++) {
+			for(; xStart < xFinish; xStart++, yStart++) {
 				if (myBoard.get(xStart, yStart) != null) {
 					return false;
 				}

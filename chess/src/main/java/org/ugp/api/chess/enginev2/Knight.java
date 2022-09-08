@@ -7,7 +7,7 @@ public class Knight extends ChessPiece
 	}
 	
 	public boolean canMoveTo(int x, int y) {
-		if (super.canMoveTo(x,y)) 
+		if (super.canMoveTo(x, y)) 
 		{
 			if (Math.abs(getX() - x) == 2 && Math.abs(getY() - y) == 1)
 				return true;

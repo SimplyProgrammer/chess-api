@@ -7,8 +7,23 @@ public class Pawn extends ChessPiece
 	}
 	
 	public boolean canMoveTo(int x, int y) {
-		int step = (getColor() == BLACK ? 1 : -1) * (getMoveCount() > 0 ? 1 : 2);
+		if (!super.canMoveTo(x, y) || x != getX())
+			return false;
 		
-		return super.canMoveTo(x,y) && y - getY() <= step && myBoard.get(x, y) != null;
+		int step = getMoveCount() > 0 ? 1 : 2;
+		if (getColor() == BLACK)
+		{
+			for (int i = 1; i <= step; i++) {
+				System.out.println(getX() + " " + (getY() + i) + !myBoard.isEmpty(getX(), getY() + i));
+				if (!myBoard.isEmpty(getX(), getY() + i))
+					return false;
+			}
+		}
+		else
+		for (int i = getY(); i <= step; i--) {
+			if (!myBoard.isEmpty(getX(), i))
+				return false;
+		}
+		return true;
 	}
 }

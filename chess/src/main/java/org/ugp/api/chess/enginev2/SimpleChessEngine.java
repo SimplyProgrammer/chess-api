@@ -9,13 +9,16 @@ public class SimpleChessEngine implements SelfSerializable
 	protected int onTurn;
 	
 	public SimpleChessEngine(int width, int height, int onTurn) {
-		pieces = new ChessPiece[width][height];
+		pieces = new ChessPiece[height][width];
 		this.onTurn = onTurn;
 	}
 	
 	@Override
 	public Object[] serialize() {
 		Scope s = new Scope();
+		s.put("w", getWidth());
+		s.put("h", getHeight());
+		s.put("onTurn", onTurn);
 		s.put("pieces", pieces);
 		return new Object[] {s};
 	}
@@ -25,7 +28,7 @@ public class SimpleChessEngine implements SelfSerializable
 		String str = "";
 		for (int x = 0; x < getWidth(); x++) {
 			for (int y = 0; y < getHeight(); y++) {
-				ChessPiece piece = pieces[x][y];
+				ChessPiece piece = get(x, y);
 				str += piece == null ? '#' : piece;
 			}
 			str += "\n";
@@ -37,6 +40,7 @@ public class SimpleChessEngine implements SelfSerializable
 		int[][] metrix = new int[getWidth()][getHeight()];
 		
 		ChessPiece piece = get(px, py);
+		System.out.println(px + " " + py + " " + piece);
 		for (int x = 0; x < getWidth(); x++) {
 			for (int y = 0; y < getHeight(); y++) {
 				if (piece.canMoveTo(x, y))
@@ -57,13 +61,16 @@ public class SimpleChessEngine implements SelfSerializable
 	}
 	
 	public boolean isEmpty(int x, int y) {
-		return isInBounds(x, y) && pieces[x][y] == null;
+		return get(x, y) == null;
 	}
 	
-	public void move(int fromX, int fromY, int toX, int toY) {
-		if (isInBounds(toX, toY) && isOnTurn(fromX, fromY)) {
+	public boolean move(int fromX, int fromY, int toX, int toY) {
+		if (isOnTurn(fromX, fromY)) {
 			remove(fromX, fromY).moveTo(toX, toY);
+			onTurn ^= 1;
+			return true;
 		}
+		return false;
 	}
 	
 	public boolean isInBounds(int x, int y) {
@@ -72,46 +79,43 @@ public class SimpleChessEngine implements SelfSerializable
 	}
 	
 	public ChessPiece get(int x, int y) {
-		return isInBounds(x, y) ? pieces[x][y] : null; 
+		return isInBounds(x, y) ? pieces[y][x] : null; 
 	}
 	
 	public ChessPiece remove(int x, int y) {
 		if (isInBounds(x, y))
 		{
 			ChessPiece piece = get(x, y);
-			pieces[x][y] = null;
+			pieces[y][x] = null;
 			return piece;
 		}
 		return null;
 	}
 
 	public void remove(ChessPiece removePiece) {
-		pieces[removePiece.getX()][removePiece.getY()] = null;
+		pieces[removePiece.getY()][removePiece.getX()] = null;
 	}
 
 	public ChessPiece put(String type, int color, int x, int y) {
-		if (isInBounds(x, y))
-		{
-			if (type == "k")
-				return pieces[x][y] = new King(this, color, x, y);
-			if (type == "q")
-				return pieces[x][y] = new Queen(this, color, x, y);
-			if (type == "n")
-				return pieces[x][y] = new Knight(this, color, x, y);
-			if (type == "b")
-				return pieces[x][y] = new Bishop(this, color, x, y);
-			if (type == "r")
-				return pieces[x][y] = new Rook(this, color, x, y);
-			if (type == "p")
-				return pieces[x][y] = new Pawn(this, color, x, y);
-			return pieces[x][y] = new ChessPiece(this, type, color, x, y);
-		}
-		return null;
+		if (type == "k")
+			return put(new King(this, color, x, y), x, y);
+		if (type == "q")
+			return put(new Queen(this, color, x, y), x, y);
+		if (type == "n")
+			return put(new Knight(this, color, x, y), x, y);
+		if (type == "b")
+			return put(new Bishop(this, color, x, y), x, y);
+		if (type == "r")
+			return put(new Rook(this, color, x, y), x, y);
+		if (type == "p")
+			return put(new Pawn(this, color, x, y), x, y);
+		return put(new ChessPiece(this, type, color, x, y), x, y);
 	}
 	
-	public void put(ChessPiece chessPiece, int x, int y) {
+	public ChessPiece put(ChessPiece chessPiece, int x, int y) {
 		if (isInBounds(x, y))
-			pieces[x][y] = chessPiece;
+			return pieces[y][x] = chessPiece;
+		return null;
 	}
 	
 	public int getWidth() {
@@ -120,6 +124,10 @@ public class SimpleChessEngine implements SelfSerializable
 	
 	public int getHeight() {
 		return pieces.length;
+	}
+	
+	public int getLongerSide() {
+		return Math.max(getWidth(), getHeight());
 	}
 	
 	public ChessPiece[][] getPieces() {

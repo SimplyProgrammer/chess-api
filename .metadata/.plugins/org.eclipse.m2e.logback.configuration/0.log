@@ -2377,3 +2377,688 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.ugp:seria
 2022-09-07 14:29:11,757 [Worker-208: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
 2022-09-07 14:29:11,757 [Worker-208: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
 2022-09-07 14:29:11,758 [Worker-208: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 18:29:10,956 [Worker-214: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 18:29:10,957 [Worker-214: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 18:29:10,957 [Worker-214: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 18:29:10,957 [Worker-214: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 18:30:06,311 [Worker-212: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 18:30:06,311 [Worker-212: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 18:30:06,312 [Worker-212: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 18:30:06,312 [Worker-212: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 18:36:42,990 [Worker-216: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 18:36:42,990 [Worker-216: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 18:36:42,991 [Worker-216: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 18:36:42,991 [Worker-216: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 18:37:22,855 [Worker-214: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 18:37:22,855 [Worker-214: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 18:37:22,856 [Worker-214: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 18:37:22,856 [Worker-214: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 18:37:47,677 [Worker-218: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 18:37:47,678 [Worker-218: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 18:37:47,678 [Worker-218: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 18:37:47,678 [Worker-218: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 18:38:53,091 [Worker-218: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 18:38:53,091 [Worker-218: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 18:38:53,091 [Worker-218: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 18:38:53,092 [Worker-218: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 18:40:08,255 [Worker-214: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 18:40:08,256 [Worker-214: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 18:40:08,256 [Worker-214: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 18:40:08,257 [Worker-214: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 18:40:27,719 [Worker-216: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 18:40:27,719 [Worker-216: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 18:40:27,720 [Worker-216: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 18:40:27,720 [Worker-216: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 18:41:09,665 [Worker-216: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 18:41:09,666 [Worker-216: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 18:41:09,666 [Worker-216: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 18:41:09,667 [Worker-216: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 18:41:35,656 [Worker-214: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 18:41:35,657 [Worker-214: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 18:41:35,657 [Worker-214: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 18:41:35,658 [Worker-214: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 18:42:56,979 [Worker-206: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 18:42:56,980 [Worker-206: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 18:42:56,980 [Worker-206: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 18:42:56,981 [Worker-206: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 18:45:03,818 [Worker-217: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 18:45:03,818 [Worker-217: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 18:45:03,819 [Worker-217: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 18:45:03,819 [Worker-217: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 18:45:08,289 [Worker-214: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 18:45:08,290 [Worker-214: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 18:45:08,290 [Worker-214: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 18:45:08,291 [Worker-214: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 18:48:29,016 [Worker-218: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 18:48:29,017 [Worker-218: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 18:48:29,018 [Worker-218: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 18:48:29,018 [Worker-218: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 18:51:48,254 [Worker-220: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 18:51:48,255 [Worker-220: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 18:51:48,255 [Worker-220: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 18:51:48,256 [Worker-220: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 18:52:21,596 [Worker-222: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 18:52:21,597 [Worker-222: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 18:52:21,598 [Worker-222: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 18:52:21,598 [Worker-222: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 18:52:22,696 [Worker-216: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 18:52:22,696 [Worker-216: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 18:52:22,697 [Worker-216: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 18:52:22,697 [Worker-216: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 18:52:47,050 [Worker-219: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 18:52:47,050 [Worker-219: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 18:52:47,051 [Worker-219: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 18:52:47,051 [Worker-219: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 18:54:03,459 [Worker-220: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 18:54:03,460 [Worker-220: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 18:54:03,460 [Worker-220: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 18:54:03,461 [Worker-220: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 18:54:53,604 [Worker-222: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 18:54:53,605 [Worker-222: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 18:54:53,606 [Worker-222: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 18:54:53,606 [Worker-222: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 18:57:56,900 [Worker-220: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 18:57:56,901 [Worker-220: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 18:57:56,901 [Worker-220: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 18:57:56,902 [Worker-220: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 19:00:21,287 [Worker-219: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:00:21,287 [Worker-219: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 19:00:21,288 [Worker-219: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:00:21,288 [Worker-219: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 19:03:48,152 [Worker-211: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:03:48,152 [Worker-211: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 19:03:48,153 [Worker-211: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:03:48,153 [Worker-211: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 19:03:54,622 [Worker-219: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:03:54,622 [Worker-219: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 19:03:54,623 [Worker-219: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:03:54,623 [Worker-219: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 19:04:26,148 [Worker-219: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:04:26,149 [Worker-219: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 19:04:26,149 [Worker-219: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:04:26,150 [Worker-219: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 19:06:10,808 [Worker-225: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:06:10,809 [Worker-225: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 19:06:10,809 [Worker-225: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:06:10,810 [Worker-225: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 19:06:41,318 [Worker-211: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:06:41,318 [Worker-211: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 19:06:41,319 [Worker-211: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:06:41,319 [Worker-211: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 19:07:11,024 [Worker-226: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:07:11,024 [Worker-226: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 19:07:11,025 [Worker-226: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:07:11,026 [Worker-226: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 19:14:30,845 [Worker-227: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:14:30,845 [Worker-227: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 19:14:30,846 [Worker-227: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:14:30,846 [Worker-227: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 19:19:10,478 [Worker-225: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:19:10,479 [Worker-225: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 19:19:10,479 [Worker-225: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:19:10,480 [Worker-225: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 19:32:59,211 [Worker-235: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:32:59,212 [Worker-235: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 19:32:59,212 [Worker-235: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:32:59,213 [Worker-235: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 19:33:39,866 [Worker-235: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:33:39,867 [Worker-235: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 19:33:39,867 [Worker-235: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:33:39,868 [Worker-235: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 19:34:37,760 [Worker-234: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:34:37,769 [Worker-234: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 19:34:37,769 [Worker-234: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:34:37,770 [Worker-234: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 19:36:22,475 [Worker-226: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:36:22,475 [Worker-226: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 19:36:22,476 [Worker-226: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:36:22,476 [Worker-226: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 19:36:49,727 [Worker-236: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:36:49,727 [Worker-236: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 19:36:49,728 [Worker-236: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:36:49,728 [Worker-236: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 19:37:00,598 [Worker-235: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:37:00,598 [Worker-235: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 19:37:00,599 [Worker-235: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:37:00,599 [Worker-235: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 19:38:01,123 [Worker-235: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:38:01,123 [Worker-235: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 19:38:01,124 [Worker-235: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:38:01,124 [Worker-235: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 19:38:44,658 [Worker-237: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:38:44,659 [Worker-237: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 19:38:44,660 [Worker-237: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:38:44,660 [Worker-237: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 19:48:06,391 [Worker-239: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:48:06,392 [Worker-239: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 19:48:06,392 [Worker-239: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:48:06,393 [Worker-239: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 19:48:34,828 [Worker-236: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:48:34,829 [Worker-236: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 19:48:34,829 [Worker-236: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:48:34,829 [Worker-236: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 19:49:04,115 [Worker-235: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:49:04,116 [Worker-235: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 19:49:04,116 [Worker-235: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:49:04,117 [Worker-235: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 19:49:19,820 [Worker-236: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:49:19,821 [Worker-236: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 19:49:19,821 [Worker-236: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:49:19,822 [Worker-236: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 19:49:32,727 [Worker-236: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:49:32,728 [Worker-236: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 19:49:32,728 [Worker-236: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:49:32,729 [Worker-236: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 19:50:29,345 [Worker-235: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:50:29,345 [Worker-235: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 19:50:29,345 [Worker-235: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:50:29,346 [Worker-235: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 19:50:39,318 [Worker-235: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:50:39,318 [Worker-235: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 19:50:39,319 [Worker-235: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:50:39,319 [Worker-235: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 19:50:50,596 [Worker-235: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:50:50,597 [Worker-235: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 19:50:50,597 [Worker-235: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:50:50,598 [Worker-235: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 19:51:31,726 [Worker-235: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:51:31,727 [Worker-235: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 19:51:31,727 [Worker-235: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:51:31,728 [Worker-235: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 19:51:46,252 [Worker-236: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:51:46,252 [Worker-236: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 19:51:46,253 [Worker-236: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:51:46,253 [Worker-236: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 19:52:04,633 [Worker-240: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:52:04,634 [Worker-240: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 19:52:04,634 [Worker-240: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:52:04,635 [Worker-240: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 19:53:08,167 [Worker-239: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:53:08,168 [Worker-239: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 19:53:08,168 [Worker-239: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 19:53:08,169 [Worker-239: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 20:28:50,583 [Worker-226: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:28:50,584 [Worker-226: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 20:28:50,584 [Worker-226: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:28:50,584 [Worker-226: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 20:33:20,485 [Worker-243: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:33:20,486 [Worker-243: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 20:33:20,486 [Worker-243: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:33:20,486 [Worker-243: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 20:34:46,941 [Worker-244: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:34:46,942 [Worker-244: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 20:34:46,942 [Worker-244: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:34:46,943 [Worker-244: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 20:34:51,596 [Worker-244: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:34:51,596 [Worker-244: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 20:34:51,597 [Worker-244: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:34:51,597 [Worker-244: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 20:35:32,643 [Worker-235: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:35:32,644 [Worker-235: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 20:35:32,645 [Worker-235: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:35:32,645 [Worker-235: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 20:36:08,425 [Worker-245: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:36:08,426 [Worker-245: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 20:36:08,426 [Worker-245: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:36:08,427 [Worker-245: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 20:37:09,835 [Worker-245: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:37:09,835 [Worker-245: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 20:37:09,836 [Worker-245: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:37:09,836 [Worker-245: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 20:37:47,273 [Worker-226: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:37:47,274 [Worker-226: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 20:37:47,274 [Worker-226: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:37:47,275 [Worker-226: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 20:37:56,099 [Worker-235: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:37:56,099 [Worker-235: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 20:37:56,100 [Worker-235: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:37:56,100 [Worker-235: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 20:38:18,061 [Worker-226: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:38:18,062 [Worker-226: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 20:38:18,062 [Worker-226: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:38:18,063 [Worker-226: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 20:38:28,311 [Worker-244: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:38:28,312 [Worker-244: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 20:38:28,312 [Worker-244: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:38:28,313 [Worker-244: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 20:38:35,332 [Worker-235: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:38:35,333 [Worker-235: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 20:38:35,333 [Worker-235: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:38:35,333 [Worker-235: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 20:39:04,542 [Worker-245: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:39:04,542 [Worker-245: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 20:39:04,543 [Worker-245: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:39:04,543 [Worker-245: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 20:39:36,387 [Worker-235: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:39:36,387 [Worker-235: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 20:39:36,388 [Worker-235: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:39:36,388 [Worker-235: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 20:39:55,952 [Worker-245: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:39:55,953 [Worker-245: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 20:39:55,953 [Worker-245: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:39:55,954 [Worker-245: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 20:40:10,527 [Worker-235: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:40:10,528 [Worker-235: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 20:40:10,528 [Worker-235: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:40:10,529 [Worker-235: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 20:43:15,582 [Worker-235: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:43:15,583 [Worker-235: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 20:43:15,583 [Worker-235: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:43:15,584 [Worker-235: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 20:43:27,213 [Worker-226: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:43:27,213 [Worker-226: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 20:43:27,214 [Worker-226: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:43:27,214 [Worker-226: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 20:43:29,922 [Worker-226: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:43:29,922 [Worker-226: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 20:43:29,922 [Worker-226: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:43:29,923 [Worker-226: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 20:43:41,768 [Worker-246: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:43:41,769 [Worker-246: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 20:43:41,769 [Worker-246: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:43:41,770 [Worker-246: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 20:44:18,042 [Worker-246: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:44:18,043 [Worker-246: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 20:44:18,043 [Worker-246: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:44:18,044 [Worker-246: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 20:44:59,271 [Worker-243: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:44:59,272 [Worker-243: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 20:44:59,272 [Worker-243: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:44:59,273 [Worker-243: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 20:46:42,851 [Worker-243: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:46:42,852 [Worker-243: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 20:46:42,852 [Worker-243: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:46:42,853 [Worker-243: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 20:46:50,955 [Worker-248: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:46:50,956 [Worker-248: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 20:46:50,956 [Worker-248: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:46:50,957 [Worker-248: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 20:48:37,715 [Worker-243: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:48:37,716 [Worker-243: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 20:48:37,716 [Worker-243: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:48:37,716 [Worker-243: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 20:50:07,641 [Worker-249: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:50:07,642 [Worker-249: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 20:50:07,642 [Worker-249: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:50:07,643 [Worker-249: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 20:50:45,617 [Worker-235: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:50:45,617 [Worker-235: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 20:50:45,618 [Worker-235: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:50:45,618 [Worker-235: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 20:51:23,671 [Worker-243: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:51:23,672 [Worker-243: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 20:51:23,672 [Worker-243: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:51:23,673 [Worker-243: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 20:51:47,146 [Worker-226: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:51:47,147 [Worker-226: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 20:51:47,147 [Worker-226: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:51:47,148 [Worker-226: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 20:52:13,335 [Worker-249: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:52:13,335 [Worker-249: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 20:52:13,336 [Worker-249: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:52:13,336 [Worker-249: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 20:52:52,208 [Worker-243: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:52:52,209 [Worker-243: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 20:52:52,209 [Worker-243: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:52:52,210 [Worker-243: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 20:55:04,148 [Worker-226: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:55:04,148 [Worker-226: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 20:55:04,149 [Worker-226: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:55:04,149 [Worker-226: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 20:55:29,104 [Worker-226: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:55:29,105 [Worker-226: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 20:55:29,105 [Worker-226: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:55:29,106 [Worker-226: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 20:56:02,386 [Worker-248: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:56:02,386 [Worker-248: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 20:56:02,387 [Worker-248: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:56:02,387 [Worker-248: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 20:56:40,255 [Worker-226: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:56:40,255 [Worker-226: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 20:56:40,256 [Worker-226: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:56:40,256 [Worker-226: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 20:57:35,673 [Worker-250: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:57:35,674 [Worker-250: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 20:57:35,674 [Worker-250: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:57:35,675 [Worker-250: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 20:57:46,054 [Worker-235: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:57:46,055 [Worker-235: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 20:57:46,055 [Worker-235: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:57:46,056 [Worker-235: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 20:57:53,870 [Worker-243: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:57:53,871 [Worker-243: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 20:57:53,871 [Worker-243: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 20:57:53,872 [Worker-243: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 21:01:24,286 [Worker-249: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:01:24,287 [Worker-249: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 21:01:24,287 [Worker-249: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:01:24,288 [Worker-249: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 21:03:48,768 [Worker-249: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:03:48,768 [Worker-249: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 21:03:48,769 [Worker-249: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:03:48,769 [Worker-249: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 21:04:47,662 [Worker-226: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:04:47,663 [Worker-226: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 21:04:47,663 [Worker-226: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:04:47,664 [Worker-226: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 21:05:21,906 [Worker-248: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:05:21,906 [Worker-248: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 21:05:21,907 [Worker-248: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:05:21,907 [Worker-248: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 21:06:13,575 [Worker-249: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:06:13,575 [Worker-249: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 21:06:13,576 [Worker-249: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:06:13,576 [Worker-249: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 21:06:26,622 [Worker-235: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:06:26,623 [Worker-235: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 21:06:26,623 [Worker-235: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:06:26,624 [Worker-235: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 21:07:28,284 [Worker-248: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:07:28,285 [Worker-248: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 21:07:28,285 [Worker-248: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:07:28,286 [Worker-248: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 21:08:24,185 [Worker-249: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:08:24,186 [Worker-249: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 21:08:24,186 [Worker-249: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:08:24,187 [Worker-249: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 21:09:14,585 [Worker-243: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:09:14,585 [Worker-243: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 21:09:14,586 [Worker-243: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:09:14,586 [Worker-243: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 21:10:33,440 [Worker-226: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:10:33,441 [Worker-226: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 21:10:33,441 [Worker-226: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:10:33,442 [Worker-226: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 21:11:51,955 [Worker-250: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:11:51,956 [Worker-250: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 21:11:51,956 [Worker-250: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:11:51,957 [Worker-250: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 21:17:48,503 [Worker-251: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:17:48,504 [Worker-251: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 21:17:48,505 [Worker-251: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:17:48,505 [Worker-251: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 21:21:22,307 [Worker-253: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:21:22,308 [Worker-253: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 21:21:22,308 [Worker-253: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:21:22,309 [Worker-253: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 21:32:36,391 [Worker-257: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:32:36,392 [Worker-257: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 21:32:36,392 [Worker-257: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:32:36,393 [Worker-257: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 21:38:20,041 [Worker-259: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:38:20,041 [Worker-259: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 21:38:20,042 [Worker-259: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:38:20,042 [Worker-259: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 21:40:57,288 [Worker-259: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:40:57,289 [Worker-259: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 21:40:57,289 [Worker-259: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:40:57,290 [Worker-259: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 21:44:19,218 [Worker-259: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:44:19,218 [Worker-259: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 21:44:19,219 [Worker-259: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:44:19,219 [Worker-259: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 21:46:01,349 [Worker-259: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:46:01,349 [Worker-259: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 21:46:01,350 [Worker-259: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:46:01,350 [Worker-259: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 21:46:47,037 [Worker-259: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:46:47,038 [Worker-259: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 21:46:47,038 [Worker-259: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:46:47,039 [Worker-259: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 21:47:32,071 [Worker-243: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:47:32,072 [Worker-243: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 21:47:32,072 [Worker-243: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:47:32,072 [Worker-243: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 21:47:54,543 [Worker-257: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:47:54,543 [Worker-257: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 21:47:54,544 [Worker-257: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:47:54,544 [Worker-257: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 21:48:13,078 [Worker-259: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:48:13,079 [Worker-259: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 21:48:13,079 [Worker-259: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:48:13,079 [Worker-259: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 21:49:28,552 [Worker-257: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:49:28,552 [Worker-257: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 21:49:28,553 [Worker-257: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:49:28,553 [Worker-257: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 21:51:08,786 [Worker-260: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:51:08,786 [Worker-260: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 21:51:08,787 [Worker-260: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:51:08,787 [Worker-260: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 21:52:54,227 [Worker-243: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:52:54,227 [Worker-243: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 21:52:54,228 [Worker-243: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:52:54,228 [Worker-243: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 21:55:21,776 [Worker-257: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:55:21,777 [Worker-257: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 21:55:21,777 [Worker-257: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:55:21,777 [Worker-257: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 21:55:42,938 [Worker-258: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:55:42,939 [Worker-258: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 21:55:42,939 [Worker-258: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:55:42,940 [Worker-258: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 21:56:37,419 [Worker-251: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:56:37,420 [Worker-251: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 21:56:37,420 [Worker-251: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:56:37,421 [Worker-251: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 21:57:02,677 [Worker-251: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:57:02,677 [Worker-251: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 21:57:02,678 [Worker-251: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:57:02,678 [Worker-251: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 21:57:23,097 [Worker-251: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:57:23,097 [Worker-251: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 21:57:23,098 [Worker-251: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:57:23,099 [Worker-251: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 21:57:46,374 [Worker-260: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:57:46,375 [Worker-260: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 21:57:46,375 [Worker-260: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:57:46,376 [Worker-260: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 21:59:41,180 [Worker-260: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:59:41,180 [Worker-260: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 21:59:41,180 [Worker-260: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 21:59:41,181 [Worker-260: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 22:00:02,392 [Worker-251: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:00:02,393 [Worker-251: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 22:00:02,393 [Worker-251: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:00:02,394 [Worker-251: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 22:03:54,061 [Worker-251: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:03:54,062 [Worker-251: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 22:03:54,062 [Worker-251: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:03:54,062 [Worker-251: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 22:04:04,113 [Worker-243: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:04:04,113 [Worker-243: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 22:04:04,114 [Worker-243: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:04:04,114 [Worker-243: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 22:05:56,316 [Worker-261: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:05:56,317 [Worker-261: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 22:05:56,317 [Worker-261: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:05:56,318 [Worker-261: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 22:09:47,966 [Worker-261: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:09:47,967 [Worker-261: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 22:09:47,967 [Worker-261: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:09:47,968 [Worker-261: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 22:11:35,435 [Worker-243: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:11:35,436 [Worker-243: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 22:11:35,436 [Worker-243: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:11:35,436 [Worker-243: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 22:12:17,760 [Worker-263: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:12:17,760 [Worker-263: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 22:12:17,761 [Worker-263: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:12:17,761 [Worker-263: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 22:14:14,354 [Worker-262: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:14:14,355 [Worker-262: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 22:14:14,355 [Worker-262: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:14:14,356 [Worker-262: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 22:16:50,593 [Worker-264: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:16:50,594 [Worker-264: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 22:16:50,594 [Worker-264: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:16:50,595 [Worker-264: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 22:18:27,765 [Worker-258: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:18:27,766 [Worker-258: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 22:18:27,766 [Worker-258: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:18:27,767 [Worker-258: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 22:18:44,858 [Worker-264: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:18:44,859 [Worker-264: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 22:18:44,859 [Worker-264: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:18:44,860 [Worker-264: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 22:20:00,775 [Worker-265: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:20:00,776 [Worker-265: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 22:20:00,776 [Worker-265: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:20:00,777 [Worker-265: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 22:21:33,044 [Worker-261: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:21:33,045 [Worker-261: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 22:21:33,045 [Worker-261: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:21:33,046 [Worker-261: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 22:21:58,395 [Worker-265: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:21:58,396 [Worker-265: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 22:21:58,396 [Worker-265: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:21:58,396 [Worker-265: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 22:23:20,041 [Worker-263: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:23:20,042 [Worker-263: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 22:23:20,042 [Worker-263: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:23:20,043 [Worker-263: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 22:24:53,513 [Worker-263: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:24:53,514 [Worker-263: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 22:24:53,514 [Worker-263: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:24:53,515 [Worker-263: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 22:26:15,595 [Worker-265: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:26:15,596 [Worker-265: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 22:26:15,596 [Worker-265: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:26:15,596 [Worker-265: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 22:26:45,900 [Worker-264: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:26:45,901 [Worker-264: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 22:26:45,901 [Worker-264: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:26:45,902 [Worker-264: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 22:26:51,391 [Worker-264: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:26:51,392 [Worker-264: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 22:26:51,392 [Worker-264: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:26:51,393 [Worker-264: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 22:27:43,289 [Worker-262: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:27:43,290 [Worker-262: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 22:27:43,290 [Worker-262: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:27:43,291 [Worker-262: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 22:28:28,794 [Worker-262: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:28:28,795 [Worker-262: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 22:28:28,795 [Worker-262: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:28:28,796 [Worker-262: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 22:29:08,552 [Worker-258: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:29:08,553 [Worker-258: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 22:29:08,553 [Worker-258: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:29:08,554 [Worker-258: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 22:29:21,223 [Worker-263: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:29:21,224 [Worker-263: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 22:29:21,224 [Worker-263: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:29:21,225 [Worker-263: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 22:30:49,018 [Worker-263: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:30:49,019 [Worker-263: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 22:30:49,019 [Worker-263: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:30:49,020 [Worker-263: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 22:32:07,894 [Worker-262: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:32:07,894 [Worker-262: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 22:32:07,895 [Worker-262: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:32:07,895 [Worker-262: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 22:34:09,089 [Worker-261: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:34:09,089 [Worker-261: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 22:34:09,090 [Worker-261: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:34:09,090 [Worker-261: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 22:34:34,288 [Worker-261: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:34:34,288 [Worker-261: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 22:34:34,288 [Worker-261: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:34:34,289 [Worker-261: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 22:35:05,368 [Worker-263: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:35:05,369 [Worker-263: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 22:35:05,369 [Worker-263: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:35:05,370 [Worker-263: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 22:35:58,216 [Worker-267: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:35:58,217 [Worker-267: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 22:35:58,217 [Worker-267: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:35:58,218 [Worker-267: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 22:36:22,777 [Worker-267: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:36:22,778 [Worker-267: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 22:36:22,778 [Worker-267: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:36:22,779 [Worker-267: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 22:36:43,805 [Worker-267: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:36:43,806 [Worker-267: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 22:36:43,806 [Worker-267: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:36:43,807 [Worker-267: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 22:37:04,679 [Worker-261: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:37:04,680 [Worker-261: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 22:37:04,680 [Worker-261: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:37:04,680 [Worker-261: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 22:37:56,136 [Worker-263: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:37:56,137 [Worker-263: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 22:37:56,137 [Worker-263: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:37:56,137 [Worker-263: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-07 22:38:06,884 [Worker-267: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:38:06,885 [Worker-267: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-07 22:38:06,885 [Worker-267: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-07 22:38:06,886 [Worker-267: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-08 06:52:09,596 [Worker-258: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-08 06:52:09,597 [Worker-258: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-08 06:52:09,597 [Worker-258: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-08 06:52:09,598 [Worker-258: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-08 06:52:33,468 [Worker-258: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-08 06:52:33,469 [Worker-258: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-08 06:52:33,469 [Worker-258: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-08 06:52:33,470 [Worker-258: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-08 06:52:52,057 [Worker-268: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-08 06:52:52,058 [Worker-268: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-08 06:52:52,058 [Worker-268: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-08 06:52:52,058 [Worker-268: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-08 06:53:09,891 [Worker-266: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-08 06:53:09,892 [Worker-266: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-08 06:53:09,892 [Worker-266: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-08 06:53:09,893 [Worker-266: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-08 06:53:12,233 [Worker-261: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-08 06:53:12,234 [Worker-261: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-08 06:53:12,234 [Worker-261: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-08 06:53:12,234 [Worker-261: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-08 06:54:01,789 [Worker-262: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-08 06:54:01,789 [Worker-262: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-08 06:54:01,790 [Worker-262: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-08 06:54:01,790 [Worker-262: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-08 06:54:27,995 [Worker-268: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-08 06:54:27,996 [Worker-268: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-08 06:54:27,996 [Worker-268: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-08 06:54:27,997 [Worker-268: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-08 06:54:57,599 [Worker-262: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-08 06:54:57,599 [Worker-262: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-08 06:54:57,600 [Worker-262: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-08 06:54:57,600 [Worker-262: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-08 06:55:24,563 [Worker-269: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-08 06:55:24,564 [Worker-269: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-08 06:55:24,565 [Worker-269: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-08 06:55:24,565 [Worker-269: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-08 06:56:00,993 [Worker-261: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-08 06:56:00,994 [Worker-261: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-08 06:56:00,994 [Worker-261: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-08 06:56:00,994 [Worker-261: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-08 06:56:48,935 [Worker-261: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-08 06:56:48,936 [Worker-261: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-08 06:56:48,936 [Worker-261: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-08 06:56:48,937 [Worker-261: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-08 06:57:13,777 [Worker-262: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-08 06:57:13,778 [Worker-262: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-08 06:57:13,778 [Worker-262: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-08 06:57:13,779 [Worker-262: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-08 06:57:51,839 [Worker-269: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-08 06:57:51,840 [Worker-269: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-08 06:57:51,840 [Worker-269: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-08 06:57:51,841 [Worker-269: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-08 06:58:04,221 [Worker-258: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-08 06:58:04,222 [Worker-258: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-08 06:58:04,222 [Worker-258: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-08 06:58:04,223 [Worker-258: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-08 06:59:51,751 [Worker-266: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-08 06:59:51,751 [Worker-266: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-08 06:59:51,752 [Worker-266: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-08 06:59:51,752 [Worker-266: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-08 07:00:11,086 [sentry-pool-1-thread-5] WARN  i.s.c.AbstractConnection.lockdown - Initiated a temporary lockdown because of exception: Too many requests to Sentry: https://docs.sentry.io/learn/quotas/
+2022-09-08 07:00:54,359 [Worker-262: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-08 07:00:54,360 [Worker-262: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-08 07:00:54,360 [Worker-262: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-08 07:00:54,361 [Worker-262: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources
+2022-09-08 07:02:10,411 [Worker-258: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-08 07:02:10,412 [Worker-258: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\main\resources
+2022-09-08 07:02:10,412 [Worker-258: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-08 07:02:10,413 [Worker-258: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\PETO\Desktop\Workspaces\Java\ChessAPI\chess\src\test\resources

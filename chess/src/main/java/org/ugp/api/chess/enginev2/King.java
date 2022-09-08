@@ -7,6 +7,7 @@ public class King extends ChessPiece
 	}
 	
 	public boolean canMoveTo(int x, int y) {
-		return super.canMoveTo(x, y) && (Math.abs(x - getX()) == 1 || Math.abs(y - getY()) == 1);
+		int distX = Math.abs(x - getX()), distY = Math.abs(y - getY());
+		return super.canMoveTo(x, y) && Math.max(distX, distY) == 1;
 	}
 }
