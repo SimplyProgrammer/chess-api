@@ -7,23 +7,13 @@ public class Pawn extends ChessPiece
 	}
 	
 	public boolean canMoveTo(int x, int y) {
-		if (!super.canMoveTo(x, y) || x != getX())
-			return false;
 		
+		ChessPiece pieceToKill = myBoard.get(x, y);
 		int step = getMoveCount() > 0 ? 1 : 2;
 		if (getColor() == BLACK)
 		{
-			for (int i = 1; i <= step; i++) {
-				System.out.println(getX() + " " + (getY() + i) + !myBoard.isEmpty(getX(), getY() + i));
-				if (!myBoard.isEmpty(getX(), getY() + i))
-					return false;
-			}
+			return (y > getY() && x == getX() && isMovingStraight(x, y) && distanceTo(x, y) <= step);
 		}
-		else
-		for (int i = getY(); i <= step; i--) {
-			if (!myBoard.isEmpty(getX(), i))
-				return false;
-		}
-		return true;
+		return getY() - y <= step && y < getY();
 	}
 }

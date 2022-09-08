@@ -26,8 +26,8 @@ public class SimpleChessEngine implements SelfSerializable
 	@Override
 	public String toString() {
 		String str = "";
-		for (int x = 0; x < getWidth(); x++) {
-			for (int y = 0; y < getHeight(); y++) {
+		for (int y = 0; y < getHeight(); y++) {
+			for (int x = 0; x < getWidth(); x++) {
 				ChessPiece piece = get(x, y);
 				str += piece == null ? '#' : piece;
 			}
@@ -37,14 +37,14 @@ public class SimpleChessEngine implements SelfSerializable
 	}
 	
 	public int[][] getMovmentMetrix(int px, int py) {
-		int[][] metrix = new int[getWidth()][getHeight()];
+		int[][] metrix = new int[getHeight()][getWidth()];
 		
 		ChessPiece piece = get(px, py);
 		System.out.println(px + " " + py + " " + piece);
 		for (int x = 0; x < getWidth(); x++) {
 			for (int y = 0; y < getHeight(); y++) {
 				if (piece.canMoveTo(x, y))
-					metrix[x][y]++;
+					metrix[y][x]++;
 			}
 		}
 		

@@ -77,17 +77,18 @@ public class HelloWorld
 			engine.put("n", 1, 6, 6);
 			engine.put("b", 0, 5, 1);
 			engine.put("b", 1, 6, 5);
-			engine.put("r", 0, 2, 1);
+//			engine.put("r", 0, 2, 1);
 			engine.put("r", 1, 2, 5);
 			engine.put("p", 0, 0, 1);
 			engine.put("p", 1, 0, 6);
+			engine.put("p", 1, 1, 6);
 						
 			System.err.println(engine);
 			app.get("/game/" + id + "/move/{x}/{y}/{newX}/{newY}", ctx -> {
 				int x = Integer.parseInt(ctx.pathParam("x")), y = Integer.parseInt(ctx.pathParam("y"));
 				engine.move(x, y, Integer.parseInt(ctx.pathParam("newX")), Integer.parseInt(ctx.pathParam("newY")));
 				ctx.result(engine.toString());
-//				System.err.println(engine);
+				System.err.println(engine);
 			});
 			
 			app.get("/game/" + id + "/movmentMetrix/{x}/{y}", ctx -> {

@@ -67,6 +67,11 @@ public class ChessPiece implements SelfSerializable
 		x = y = -1;
 	}
 	
+	public ChessPiece getNeighbour(int offX, int offY) 
+	{
+		return myBoard.get(x + offX, y + offY);
+	}
+	
 	public int getX() {
 		return x;
 	}
@@ -84,51 +89,40 @@ public class ChessPiece implements SelfSerializable
 	}
 
 	protected boolean isMovingStraight(int x, int y) {
-		int currX = getX();
-		int currY = getY();
+		if (!myBoard.isInBounds(x, y))
+			return false;
 		
-		int smallerVal;
-		int largerVal;
-		
-		if (currX == x) {
-			if (currY > y) {
-				smallerVal = y;
-				largerVal = currY;
+		int x2 = getX(), y2 = getY();
+		if (x == x2)
+		{
+			if (x > x2)
+			{
+				for (int i = 0; i < x - x2; i++)
+					if (getNeighbour(i, 0) != null)
+						return false;
 			}
-			else if (y > currY) {
-				smallerVal = currY;
-				largerVal = y;
-			}
-			else 
-				return false;
-			
-			smallerVal++;
-			for(; smallerVal < largerVal; smallerVal++) {
-				if (myBoard.get(currX, smallerVal) != null) {
-					return false;
-				}
+			else if (x2 > x)
+			{
+				for (int i = 0; i < x2 - x; i++)
+					if (getNeighbour(-i, 0) != null)
+						return false;
 			}
 			return true;
 		}
 		
-		
-		if (currY == y) {
-			if (currX > x) {
-				smallerVal = x;
-				largerVal = currX;
+		if (y == y2)
+		{
+			if (y > y2)
+			{
+				for (int i = 0; i < y - y2; i++)
+					if (getNeighbour(0, i) != null)
+						return false;
 			}
-			else if (x > currX) {
-				smallerVal = currX;
-				largerVal = x;
-			}
-			else 
-				return false;
-			
-			smallerVal++;
-			for(; smallerVal < largerVal; smallerVal++) {
-				if (myBoard.get(smallerVal, currY) != null) {
-					return false;
-				}
+			else if (y2 > y)
+			{
+				for (int i = 0; i < y2 - y; i++)
+					if (getNeighbour(0, -i) != null)
+						return false;
 			}
 			return true;
 		}
@@ -136,6 +130,10 @@ public class ChessPiece implements SelfSerializable
 		return false;
 	}
 
+	protected int distanceTo(int x, int y) {
+		int distX = Math.abs(x - getX()), distY = Math.abs(y - getY());
+		return Math.max(distX, distY);
+	}
 	
 	protected boolean isMovingDiagonal(int x, int y) {
 //		int myX = getX(), myY = getY();
