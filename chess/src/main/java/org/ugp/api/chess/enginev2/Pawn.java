@@ -12,7 +12,7 @@ public class Pawn extends ChessPiece
 		int step = getMoveCount() > 0 ? 1 : 2;
 		if (getColor() == BLACK)
 		{
-			return (y > getY() && x == getX() && isMovingStraight(x, y) && distanceTo(x, y) <= step);
+			return (y > getY() && x == getX() && canMoveStraight(x, y) && distanceTo(x, y) <= step);
 		}
 		return getY() - y <= step && y < getY();
 	}

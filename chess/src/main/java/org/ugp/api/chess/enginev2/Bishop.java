@@ -8,6 +8,6 @@ public class Bishop extends ChessPiece
 	}
 	
 	public boolean canMoveTo(int x, int y) {
-		return super.canMoveTo(x, y) && isMovingDiagonal(x, y);
+		return super.canMoveTo(x, y) && canMoveDiagonal(x, y);
 	}
 }

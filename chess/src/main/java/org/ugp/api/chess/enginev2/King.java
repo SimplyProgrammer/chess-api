@@ -7,6 +7,9 @@ public class King extends ChessPiece
 	}
 	
 	public boolean canMoveTo(int x, int y) {
-		return super.canMoveTo(x, y) && distanceTo(x, y) == 1;
+		myBoard.remove(this);
+		boolean isTileThreatened = myBoard.isThreatened(x, y);
+		myBoard.put(this);
+		return super.canMoveTo(x, y) && distanceTo(x, y) == 1 && !isTileThreatened;
 	}
 }

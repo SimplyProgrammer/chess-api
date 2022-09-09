@@ -1,16 +1,40 @@
 package org.ugp.api.chess.enginev2;
 
+import java.beans.IntrospectionException;
+
 import org.ugp.serialx.Scope;
 import org.ugp.serialx.protocols.SelfSerializable;
 
-public class SimpleChessEngine implements SelfSerializable
+public class SimpleChessEngine implements SelfSerializable, Cloneable
 {
 	protected ChessPiece[][] pieces;
 	protected int onTurn;
 	
+//	public SimpleChessEngine(Scope fromScope) {
+//		try {
+//			pieces = new ChessPiece[fromScope.getInt("h")][fromScope.getInt("w")];
+//			Scope pieces = fromScope.getScope("");
+//			onTurn = fromScope.get("onTurn");
+//		} catch (Exception e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//	}
+	
 	public SimpleChessEngine(int width, int height, int onTurn) {
 		pieces = new ChessPiece[height][width];
 		this.onTurn = onTurn;
+	}
+	
+	@Override
+	protected SimpleChessEngine clone() {
+		SimpleChessEngine newChess = new SimpleChessEngine(getWidth(), getHeight(), onTurn);
+		for (int y = 0; y < getHeight(); y++) {
+			for (int x = 0; x < getWidth(); x++) {
+				newChess.getPieces()[y][x] = this.getPieces()[y][x];
+			}
+		}
+		return newChess;
 	}
 	
 	@Override
@@ -40,7 +64,9 @@ public class SimpleChessEngine implements SelfSerializable
 		int[][] metrix = new int[getHeight()][getWidth()];
 		
 		ChessPiece piece = get(px, py);
-		System.out.println(px + " " + py + " " + piece);
+		if (piece == null)
+			return metrix;
+//		System.out.println(px + " " + py + " " + piece);
 		for (int x = 0; x < getWidth(); x++) {
 			for (int y = 0; y < getHeight(); y++) {
 				if (piece.canMoveTo(x, y))
@@ -49,6 +75,16 @@ public class SimpleChessEngine implements SelfSerializable
 		}
 		
 		return metrix;
+	}
+	
+	public boolean isThreatened(int x, int y) {
+		for (int xp = 0; xp < getWidth(); xp++) {
+			for (int yp = 0; yp < getHeight(); yp++) {
+				if (!isOnTurn(xp, yp) && getMovmentMetrix(xp, yp)[y][x] == 1)
+					return true;
+			}
+		}
+		return false;
 	}
 	
 	public boolean isOnTurn(int color) {
@@ -66,9 +102,13 @@ public class SimpleChessEngine implements SelfSerializable
 	
 	public boolean move(int fromX, int fromY, int toX, int toY) {
 		if (isOnTurn(fromX, fromY)) {
-			remove(fromX, fromY).moveTo(toX, toY);
-			onTurn ^= 1;
-			return true;
+			ChessPiece piece = get(fromX, fromY).moveToIfCan(toX, toY);
+			if (piece != null)
+			{
+				remove(fromX, fromY);
+				onTurn ^= 1;
+				return true;
+			}
 		}
 		return false;
 	}
@@ -110,6 +150,10 @@ public class SimpleChessEngine implements SelfSerializable
 		if (type == "p")
 			return put(new Pawn(this, color, x, y), x, y);
 		return put(new ChessPiece(this, type, color, x, y), x, y);
+	}
+	
+	public ChessPiece put(ChessPiece chessPiece) {
+		return put(chessPiece, chessPiece.getX(), chessPiece.getY());
 	}
 	
 	public ChessPiece put(ChessPiece chessPiece, int x, int y) {

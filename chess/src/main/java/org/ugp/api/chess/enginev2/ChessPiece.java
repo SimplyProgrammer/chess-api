@@ -47,9 +47,15 @@ public class ChessPiece implements SelfSerializable
 		return false;
 	}
 	
+	public ChessPiece moveToIfCan(int x, int y) {	
+		if (canMoveTo(x, y))
+			return moveTo(x, y);
+		return null;
+	}
+	
 	public ChessPiece moveTo(int x, int y) {	
-		if (myBoard.get(x, y) == this)
-			myBoard.remove(this);
+		if (getX() == x && getY() == y)
+			return null;
 		this.x = x;
 		this.y = y;
 		
@@ -88,39 +94,36 @@ public class ChessPiece implements SelfSerializable
 		return moveCount;
 	}
 
-	protected boolean isMovingStraight(int x, int y) {
-		if (!myBoard.isInBounds(x, y))
-			return false;
-		
-		int x2 = getX(), y2 = getY();
-		if (x == x2)
+	protected boolean canMoveStraight(int x, int y) {
+		int myX = getX(), myY = getY();
+		if (y == myY) //Horizontal
 		{
-			if (x > x2)
+			if (x > myX) 
 			{
-				for (int i = 0; i < x - x2; i++)
+				for (int i = 1; i < x - myX; i++) //Go right
 					if (getNeighbour(i, 0) != null)
 						return false;
 			}
-			else if (x2 > x)
+			else
 			{
-				for (int i = 0; i < x2 - x; i++)
+				for (int i = 1; i < myX - x; i++) //Go left
 					if (getNeighbour(-i, 0) != null)
 						return false;
 			}
 			return true;
 		}
 		
-		if (y == y2)
+		if (x == myX) //Vertical
 		{
-			if (y > y2)
+			if (y > myY)
 			{
-				for (int i = 0; i < y - y2; i++)
+				for (int i = 1; i < y - myY; i++) //Go down
 					if (getNeighbour(0, i) != null)
 						return false;
 			}
-			else if (y2 > y)
+			else
 			{
-				for (int i = 0; i < y2 - y; i++)
+				for (int i = 1; i < myY - y; i++) //Go top
 					if (getNeighbour(0, -i) != null)
 						return false;
 			}
@@ -129,82 +132,41 @@ public class ChessPiece implements SelfSerializable
 		
 		return false;
 	}
-
-	protected int distanceTo(int x, int y) {
-		int distX = Math.abs(x - getX()), distY = Math.abs(y - getY());
-		return Math.max(distX, distY);
-	}
 	
-	protected boolean isMovingDiagonal(int x, int y) {
-//		int myX = getX(), myY = getY();
-//		if (Math.abs(x - myX) == Math.abs(y - myY)) {
-//			int longerSide = myBoard.getLongerSide();
-//
-//			for (int i = 1; i < longerSide; i++) { //goto top right
-//				if (!myBoard.isInBounds(myX + i, myY - i))
-//					continue;
-//				System.out.println((myX + i) + " " + (myY - i));
-//				if (myBoard.get(myX + i, myY - i) != null)
-//					return false;
-//			}
-//			
-//			for (int i = 1; i < longerSide; i++) { //goto top left
-//				if (!myBoard.isInBounds(myX - i, myY - i))
-//					continue;
-//				if (myBoard.get(myX - i, myY - i) != null)
-//					return false;
-//			}
-//			
-//			for (int i = 1; i < longerSide; i++) { //goto bot right
-//				if (!myBoard.isInBounds(myX + i, myY + i))
-//					continue;
-//				if (myBoard.get(myX + i, myY + i) != null)
-//					return false;
-//			}
-//			
-//			for (int i = 1; i < longerSide; i++) { //goto bot left
-//				if (!myBoard.isInBounds(myX - i, myY + i))
-//					continue;
-//				if (myBoard.get(myX - i, myY + i) != null)
-//					return false;
-//			}
-//			
-//			return true;
-//		}
-//		
-//		return false;
-		
-		if (Math.abs(x - getX()) == Math.abs(y - getY())) {
-			int xStart = 0;
-			int yStart = 0;
-			int xFinish = 1;
-			
-			if (x < getX()) {
-				xStart = x;
-				xFinish = getX();
+	protected boolean canMoveDiagonal(int x, int y) {
+		int myX = getX(), myY = getY();
+		if (Math.abs(x - getX()) == Math.abs(y - getY())) //Diagonal
+		{
+			if (x > myX) //Go right
+			{
+				int dist = x - myX;
+				if (y > myY)
+				{
+					for (int i = 1; i < dist; i++) //Go down
+						if (getNeighbour(i, i) != null)
+							return false;
+				}
+				else
+				{
+					for (int i = 1; i < dist; i++) //Go up
+						if (getNeighbour(i, -i) != null)
+							return false;
+				}
 			}
-			else if (x > getX()) {
-				xStart = getX();
-				xFinish = x;
-			}
-			else
-				return false;
-			
-			if (y < getY()) {
-				yStart = y;
-			}
-			else if (y > getY()) {
-				yStart = getY();
-			}
-			else
-				return false;
-			
-			xStart++;
-			yStart++;
-			
-			for(; xStart < xFinish; xStart++, yStart++) {
-				if (myBoard.get(xStart, yStart) != null) {
-					return false;
+			else //Go left
+			{
+				int dist = myX - x;
+				if (y > myY)
+				{
+					for (int i = 1; i < dist; i++) //Go down
+						if (getNeighbour(-i, i) != null)
+							return false;
+				}
+				else
+				{
+					for (int i = 1; i < dist; i++) //Go up
+						if (getNeighbour(-i, -i) != null)
+							return false;
 				}
 			}
 			
@@ -212,5 +174,10 @@ public class ChessPiece implements SelfSerializable
 		}
 		
 		return false;
+	}
+	
+	protected int distanceTo(int x, int y) {
+		int distX = Math.abs(x - getX()), distY = Math.abs(y - getY());
+		return Math.max(distX, distY);
 	}
 }

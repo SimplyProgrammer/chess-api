@@ -19,19 +19,20 @@ public class HelloWorld
 			config.jsonMapper(new JavalinSerialXJson());
 			config.contextPath = "/api/v1/";
 		    config.enableCorsForAllOrigins();
-		    config.enableHttpAllowedMethodsOnRoutes();
 		}).start("192.168.100.88", 8989);
 		 
-		var sessions = new ArrayList<>();
+		var<ChessGameSession> sessions = new ArrayList<>();
 		app.get("/game/new", ctx -> {
-			var newSession = new ChessGameSession(app);
-			sessions.add(newSession);
+			var newSession = new ChessGameSession();
+			sessions.add(newSession.begin(app));
 			ctx.json(newSession);
 		});
 		
 		app.get("/games", ctx -> {
 			ctx.json(sessions);
 		});
+		
+		
 	}
 	
 	public static class ChessGameSession implements SelfSerializable {
@@ -47,8 +48,11 @@ public class HelloWorld
 			return args;
 		}
 		
-		public ChessGameSession(Javalin app) {
-			this.app = app;
+//		public ChessGameSession(Scope fromScope) {
+//			id = UUID.fromString(fromScope.get("session"));
+//		}
+
+		public ChessGameSession() {
 			this.id = UUID.randomUUID();
 			engine = new SimpleChessEngine(8, 8, ChessPiece.BLACK);
 			
@@ -77,16 +81,22 @@ public class HelloWorld
 			engine.put("n", 1, 6, 6);
 			engine.put("b", 0, 5, 1);
 			engine.put("b", 1, 6, 5);
-//			engine.put("r", 0, 2, 1);
+			engine.put("r", 0, 2, 1);
 			engine.put("r", 1, 2, 5);
 			engine.put("p", 0, 0, 1);
 			engine.put("p", 1, 0, 6);
 			engine.put("p", 1, 1, 6);
+			engine.put("q", 1, 3, 1);
 						
 			System.err.println(engine);
+		}
+		
+		public ChessGameSession begin(Javalin on) {
+			app = on;
 			app.get("/game/" + id + "/move/{x}/{y}/{newX}/{newY}", ctx -> {
 				int x = Integer.parseInt(ctx.pathParam("x")), y = Integer.parseInt(ctx.pathParam("y"));
-				engine.move(x, y, Integer.parseInt(ctx.pathParam("newX")), Integer.parseInt(ctx.pathParam("newY")));
+				if (!engine.move(x, y, Integer.parseInt(ctx.pathParam("newX")), Integer.parseInt(ctx.pathParam("newY"))))
+					ctx.status(500);
 				ctx.result(engine.toString());
 				System.err.println(engine);
 			});
@@ -100,6 +110,7 @@ public class HelloWorld
 				ctx.json(this);
 			});
 			
+			return this;
 		}
 
 		public Javalin getApp() {

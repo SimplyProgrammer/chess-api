@@ -7,6 +7,6 @@ public class Rook extends ChessPiece
 	}
 	
 	public boolean canMoveTo(int x, int y) {
-		return super.canMoveTo(x, y) && isMovingStraight(x, y);
+		return super.canMoveTo(x, y) && canMoveStraight(x, y);
 	}
 }
