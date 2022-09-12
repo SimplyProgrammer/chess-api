@@ -1,9 +1,12 @@
 applyBackground=false
 approved.defs.file.last.changed.time=1649720987000
-configurationInstallLocation=/D\:/eclipse/java-2021-12/eclipse/
+configurationInstallLocation=/D\:/eclipse/java-2022-06/eclipse/
+ct.upsell.display.after=1662982488823
 eclipse.preferences.version=1
 iconcolormode=pastel
-last.download.attempt.time=1662465237220
-lastConfiguration=1662476933962
-newinstall=true
+includeThemingInOomph=false
+last.download.attempt.time=1662912956427
+lastConfiguration=1662913074731
+newinstall=false
+showWelcomeDialog=false
 workbench.theme=Dark Gray

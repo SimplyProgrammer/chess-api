@@ -1,20 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="main"/>
+		<item key="selection" value="setStaticJavalin"/>
 		<item key="wrap" value="true"/>
-		<item key="casesensitive" value="false"/>
+		<item key="casesensitive" value="true"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="main"/>
+			<item value="setStaticJavalin"/>
+			<item value="y2"/>
+			<item value="x2"/>
+			<item value="myX"/>
+			<item value="Location"/>
+			<item value="yPosition"/>
+			<item value="xPosition"/>
+			<item value="x"/>
 		</list>
 		<list key="replacehistory">
+			<item value="myY"/>
+			<item value="myX"/>
+			<item value=""/>
+			<item value="y"/>
+			<item value="x"/>
+			<item value="get"/>
+			<item value="pieces"/>
+			<item value="0"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="1127"/>
+		<item key="DIALOG_X_ORIGIN" value="1490"/>
 		<item key="DIALOG_Y_ORIGIN" value="468"/>
 		<item key="DIALOG_WIDTH" value="322"/>
 		<item key="DIALOG_HEIGHT" value="391"/>

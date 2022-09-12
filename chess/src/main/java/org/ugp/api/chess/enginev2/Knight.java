@@ -3,11 +3,12 @@ package org.ugp.api.chess.enginev2;
 public class Knight extends ChessPiece
 {
 	public Knight(SimpleChessEngine board, int color, int x, int y) {
-		super(board, "n", color, x, y);
+		super(board, ChessPiece.KNIGHT, color, x, y);
 	}
 	
-	public boolean canMoveTo(int x, int y) {
-		if (super.canMoveTo(x, y)) 
+	@Override
+	public boolean canMoveTo(int x, int y, boolean checkIfKingInCheck) {
+		if (super.canMoveTo(x, y, checkIfKingInCheck)) 
 		{
 			if (Math.abs(getX() - x) == 2 && Math.abs(getY() - y) == 1)
 				return true;
@@ -15,5 +16,10 @@ public class Knight extends ChessPiece
 				return true;
 		}
 		return false;
+	}
+	
+	@Override
+	protected ChessPiece newInstance(SimpleChessEngine board) {
+		return new Knight(board, 0, 0, 0);
 	}
 }

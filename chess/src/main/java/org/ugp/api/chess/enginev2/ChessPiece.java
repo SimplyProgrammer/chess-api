@@ -3,7 +3,7 @@ package org.ugp.api.chess.enginev2;
 import org.ugp.serialx.Scope;
 import org.ugp.serialx.protocols.SelfSerializable;
 
-public class ChessPiece implements SelfSerializable
+public class ChessPiece implements SelfSerializable, Cloneable
 {
 	public static final int BLACK = 0, WHITE = 1;
 	public static final String KING = "k", QUEEN = "q", BISHOP = "b", ROOK = "r", KNIGHT = "n", PAWN = "p";
@@ -13,6 +13,7 @@ public class ChessPiece implements SelfSerializable
 	protected int moveCount;
 	protected SimpleChessEngine myBoard;
 	protected String type;
+	protected int[][] movmentMetrix; 
 
 	public ChessPiece(SimpleChessEngine board, String type, int color, int x, int y) {
 		this.myBoard = board;
@@ -20,8 +21,6 @@ public class ChessPiece implements SelfSerializable
 		this.x = x;
 		this.y = y;
 		this.type = type;
-		
-		myBoard.put(this, x, y);
 	}
 	
 	@Override
@@ -32,45 +31,85 @@ public class ChessPiece implements SelfSerializable
 	@Override
 	public Object[] serialize() {
 		Scope s = new Scope();
-		s.put("color", color);
-		s.put("type", type);
+		s.put("color", getColor());
+		s.put("type", getType());
 		return new Object[] {s};
 	}
 	
-	public boolean canMoveTo(int x, int y) {
+	@Override
+	public final ChessPiece clone() {
+		return clone(myBoard);
+	}
+	
+	public final ChessPiece clone(SimpleChessEngine board) {
+		ChessPiece clone = newInstance(board);
+		clone.x = getX();
+		clone.y = getY();
+		clone.color = getColor();
+		clone.type = getType();
+		clone.moveCount = getMoveCount();
+		clone.movmentMetrix = getMovmentMetrix();
+		return clone;
+	}
+	
+	protected ChessPiece newInstance(SimpleChessEngine board) {
+		return new ChessPiece(board, null, 0, 0, 0);
+	}
+	
+	public boolean canMoveTo(int x, int y, boolean checkIfKingInCheck) {
 		if (!myBoard.isInBounds(x, y))
 			return false;
 		
 		ChessPiece piece = myBoard.get(x, y);
 		if (piece == null || piece.getColor() != getColor()) 
+		{
+			if (checkIfKingInCheck && getType() != KING)
+			{
+				SimpleChessEngine cloneBoard = myBoard.clone();
+				if ((piece = cloneBoard.get(getX(), getY())) == null)
+					return true;
+				if (piece.moveTo(x, y) == null)
+					return true;
+				return !cloneBoard.isCheck(cloneBoard.onTurn);
+			}
 			return true;
+		}
 		return false;
 	}
 	
 	public ChessPiece moveToIfCan(int x, int y) {	
-		if (canMoveTo(x, y))
-			return moveTo(x, y);
+		if (canMoveTo(x, y, true))
+		{
+			ChessPiece piece = moveTo(x, y);
+			if (piece != null)
+			{
+				piece.movmentMetrix = null;
+				return piece;
+			}
+		}
 		return null;
 	}
 	
 	public ChessPiece moveTo(int x, int y) {	
 		if (getX() == x && getY() == y)
 			return null;
-		this.x = x;
-		this.y = y;
 		
-		ChessPiece target = myBoard.get(x, y);
-		if (target != null) 
-			kill();
-		
-		myBoard.put(this, x, y);
-		moveCount++;
-		return this;
+		ChessPiece piece = myBoard.put(this, x, y);
+		if (piece != null)
+		{
+			myBoard.remove(getX(), getY());
+			this.x = x;
+			this.y = y;
+		}
+		return piece;
 	}
 	
 	public void kill() {
 		myBoard.remove(this);
-		x = y = -1;
+	}
+	
+	public boolean isThreatened() {
+		return myBoard.isThreatened(getX(), getY(), getType() != ChessPiece.KING);
 	}
 	
 	public ChessPiece getNeighbour(int offX, int offY) 
@@ -93,21 +132,33 @@ public class ChessPiece implements SelfSerializable
 	public int getMoveCount() {
 		return moveCount;
 	}
+	
+	public String getType() {
+		return type;
+	}
+	
+	public SimpleChessEngine getMyBoard() {
+		return myBoard;
+	}
+	
+	public int[][] getMovmentMetrix() {
+		return movmentMetrix;
+	}
 
-	protected boolean canMoveStraight(int x, int y) {
-		int myX = getX(), myY = getY();
+	public static boolean canMoveStraight(ChessPiece piece, int x, int y) {
+		int myX = piece.getX(), myY = piece.getY();
 		if (y == myY) //Horizontal
 		{
 			if (x > myX) 
 			{
 				for (int i = 1; i < x - myX; i++) //Go right
-					if (getNeighbour(i, 0) != null)
+					if (piece.getNeighbour(i, 0) != null)
 						return false;
 			}
 			else
 			{
 				for (int i = 1; i < myX - x; i++) //Go left
-					if (getNeighbour(-i, 0) != null)
+					if (piece.getNeighbour(-i, 0) != null)
 						return false;
 			}
 			return true;
@@ -118,13 +169,13 @@ public class ChessPiece implements SelfSerializable
 			if (y > myY)
 			{
 				for (int i = 1; i < y - myY; i++) //Go down
-					if (getNeighbour(0, i) != null)
+					if (piece.getNeighbour(0, i) != null)
 						return false;
 			}
 			else
 			{
 				for (int i = 1; i < myY - y; i++) //Go top
-					if (getNeighbour(0, -i) != null)
+					if (piece.getNeighbour(0, -i) != null)
 						return false;
 			}
 			return true;
@@ -133,9 +184,9 @@ public class ChessPiece implements SelfSerializable
 		return false;
 	}
 	
-	protected boolean canMoveDiagonal(int x, int y) {
-		int myX = getX(), myY = getY();
-		if (Math.abs(x - getX()) == Math.abs(y - getY())) //Diagonal
+	public static boolean canMoveDiagonal(ChessPiece piece, int x, int y) {
+		int myX = piece.getX(), myY = piece.getY();
+		if (Math.abs(x - myX) == Math.abs(y - myY)) //Diagonal
 		{
 			if (x > myX) //Go right
 			{
@@ -143,13 +194,13 @@ public class ChessPiece implements SelfSerializable
 				if (y > myY)
 				{
 					for (int i = 1; i < dist; i++) //Go down
-						if (getNeighbour(i, i) != null)
+						if (piece.getNeighbour(i, i) != null)
 							return false;
 				}
 				else
 				{
 					for (int i = 1; i < dist; i++) //Go up
-						if (getNeighbour(i, -i) != null)
+						if (piece.getNeighbour(i, -i) != null)
 							return false;
 				}
 			}
@@ -159,13 +210,13 @@ public class ChessPiece implements SelfSerializable
 				if (y > myY)
 				{
 					for (int i = 1; i < dist; i++) //Go down
-						if (getNeighbour(-i, i) != null)
+						if (piece.getNeighbour(-i, i) != null)
 							return false;
 				}
 				else
 				{
 					for (int i = 1; i < dist; i++) //Go up
-						if (getNeighbour(-i, -i) != null)
+						if (piece.getNeighbour(-i, -i) != null)
 							return false;
 				}
 			}
@@ -176,7 +227,7 @@ public class ChessPiece implements SelfSerializable
 		return false;
 	}
 	
-	protected int distanceTo(int x, int y) {
+	public int distanceTo(int x, int y) {
 		int distX = Math.abs(x - getX()), distY = Math.abs(y - getY());
 		return Math.max(distX, distY);
 	}

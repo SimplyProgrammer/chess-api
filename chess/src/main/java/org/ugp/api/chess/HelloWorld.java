@@ -2,6 +2,7 @@
 package org.ugp.api.chess;
 
 import java.util.ArrayList;
+import static io.javalin.apibuilder.ApiBuilder.*;
 import java.util.UUID;
 
 import org.ugp.api.chess.enginev2.ChessPiece;
@@ -10,7 +11,10 @@ import org.ugp.serialx.GenericScope;
 import org.ugp.serialx.Scope;
 import org.ugp.serialx.protocols.SelfSerializable;
 
+import static java.lang.Integer.*;
+
 import io.javalin.Javalin;
+import io.javalin.apibuilder.ApiBuilder;
 
 public class HelloWorld 
 {
@@ -31,20 +35,18 @@ public class HelloWorld
 		app.get("/games", ctx -> {
 			ctx.json(sessions);
 		});
-		
-		
 	}
 	
 	public static class ChessGameSession implements SelfSerializable {
 		
 		protected Javalin app;
-		protected UUID id;
+		protected String sessionID;
 		protected SimpleChessEngine engine;
 		
 		@Override
 		public Object[] serialize() {
 			var args = engine.serialize();
-			((Scope) args[0]).put("session", id.toString());
+			((Scope) args[0]).put("session", getSessionId());
 			return args;
 		}
 		
@@ -53,7 +55,7 @@ public class HelloWorld
 //		}
 
 		public ChessGameSession() {
-			this.id = UUID.randomUUID();
+			sessionID = UUID.randomUUID() + "-" + hashCode();
 			engine = new SimpleChessEngine(8, 8, ChessPiece.BLACK);
 			
 //			System.out.println(engine.get(3, 1));
@@ -76,38 +78,63 @@ public class HelloWorld
 //			}
 			
 			engine.put("k", 0, 1, 0);
-			engine.put("k", 1, 6, 1);
+			engine.put("k", 1, 1, 5);
 			engine.put("n", 0, 6, 1);
 			engine.put("n", 1, 6, 6);
-			engine.put("b", 0, 5, 1);
+			engine.put("b", 0, 5, 2);
 			engine.put("b", 1, 6, 5);
 			engine.put("r", 0, 2, 1);
 			engine.put("r", 1, 2, 5);
 			engine.put("p", 0, 0, 1);
 			engine.put("p", 1, 0, 6);
 			engine.put("p", 1, 1, 6);
-			engine.put("q", 1, 3, 1);
+			engine.put("q", 1, 4, 0);
 						
-			System.err.println(engine);
+//			double t0 = System.nanoTime(), t;
+//			 engine.clone();
+//			 t = System.nanoTime();
+//			 System.out.println((t-t0)/1000000);
 		}
 		
 		public ChessGameSession begin(Javalin on) {
-			app = on;
-			app.get("/game/" + id + "/move/{x}/{y}/{newX}/{newY}", ctx -> {
-				int x = Integer.parseInt(ctx.pathParam("x")), y = Integer.parseInt(ctx.pathParam("y"));
-				if (!engine.move(x, y, Integer.parseInt(ctx.pathParam("newX")), Integer.parseInt(ctx.pathParam("newY"))))
-					ctx.status(500);
-				ctx.result(engine.toString());
-				System.err.println(engine);
-			});
-			
-			app.get("/game/" + id + "/movmentMetrix/{x}/{y}", ctx -> {
-				ctx.json(engine.getMovmentMetrix(Integer.parseInt(ctx.pathParam("x")), Integer.parseInt(ctx.pathParam("y"))));
-			});
-			
-			app.get("/game/" + id, ctx -> {
-				System.out.println(engine);
-				ctx.json(this);
+			(app = on).routes(() -> {
+				path("/game/" + getSessionId(), () -> {
+					get("/move/{x}/{y}/{newX}/{newY}", ctx -> {
+						int x = parseInt(ctx.pathParam("x")), y = parseInt(ctx.pathParam("y"));
+						int newX = parseInt(ctx.pathParam("newX")), newY = parseInt(ctx.pathParam("newY"));
+						if (!engine.moveIfCan(x, y, newX, newY))
+						{
+							ctx.status(500);
+							return;
+						}
+						
+						Scope checkInfo = new Scope();
+						checkInfo.put("isCheckmate", engine.isCheckmate(engine.getOnTurn() + 1));
+						
+						ctx.json(checkInfo);
+						System.err.println(engine);
+					});
+					
+					get("/movmentMetrix/{x}/{y}", ctx -> {
+						int x = parseInt(ctx.pathParam("x")), y = parseInt(ctx.pathParam("y"));
+						ctx.json(engine.getMovmentMetrix(x, y, true));
+					});
+					
+					get("isThreatened/{x}/{y}", ctx -> {
+						int x = parseInt(ctx.pathParam("x")), y = parseInt(ctx.pathParam("y"));
+						ctx.json(engine.isThreatened(x, y, true));
+					});
+					
+					get("{x}/{y}", ctx -> {
+						int x = parseInt(ctx.pathParam("x")), y = parseInt(ctx.pathParam("y"));
+						ctx.json(engine.get(x, y));
+					});
+					
+					get(ctx -> {
+						System.out.println(engine);
+						ctx.json(this);
+					});
+				});
 			});
 			
 			return this;
@@ -117,8 +144,8 @@ public class HelloWorld
 			return app;
 		}
 		
-		public UUID getId() {
-			return id;
+		public String getSessionId() {
+			return sessionID;
 		}
 		
 		public SimpleChessEngine getGame() {
