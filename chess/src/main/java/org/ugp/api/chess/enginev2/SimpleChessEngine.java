@@ -28,7 +28,7 @@ public class SimpleChessEngine implements SelfSerializable, Cloneable
 	@Override
 	public SimpleChessEngine clone() {
 		SimpleChessEngine newChess = new SimpleChessEngine(getWidth(), getHeight(), getOnTurn());
-		newChess.kings = kings; 
+		newChess.kings = kings.clone(); 
 		for (int y = 0; y < getHeight(); y++) {
 			for (int x = 0; x < getWidth(); x++) {
 				ChessPiece newOne = this.getPieces()[y][x];
@@ -67,20 +67,11 @@ public class SimpleChessEngine implements SelfSerializable, Cloneable
 	}
 	
 	public int[][] getMovmentMetrix(int x, int y, boolean checkIfKingInCheck) {
-		int[][] metrix = new int[getHeight()][getWidth()];
-		
 		ChessPiece piece = get(x, y);
+		int[][] metrix = new int[getHeight()][getWidth()];
 		if (piece == null)
 			return metrix;
-
-		for (int px = 0; px < getWidth(); px++) {
-			for (int py = 0; py < getHeight(); py++) {
-				if (piece.canMoveTo(px, py, checkIfKingInCheck))
-					metrix[py][px]++;
-			}
-		}
-		
-		return metrix;
+		return piece.generateMovmentMetrix(metrix, checkIfKingInCheck);
 	}
 	
 	public boolean isThreatened(int x, int y, boolean checkIfKingInCheck) {
@@ -91,6 +82,14 @@ public class SimpleChessEngine implements SelfSerializable, Cloneable
 			}
 		}
 		return false;
+	}
+	
+	public boolean hasAnyMove(int x, int y, boolean checkIfKingInCheck) {
+		for (int[] col : getMovmentMetrix(x, y, checkIfKingInCheck))
+			for (int i : col)
+				if (i > 0)
+					return false;
+		return true;
 	}
 	
 	public boolean isOnTurn(int color) {
@@ -115,7 +114,7 @@ public class SimpleChessEngine implements SelfSerializable, Cloneable
 			ChessPiece piece = get(fromX, fromY).moveToIfCan(toX, toY);
 			if (piece != null)
 			{
-				System.out.println(onTurn ^= 1);
+				onTurn ^= 1;
 				return true;
 			}
 		}
@@ -188,11 +187,7 @@ public class SimpleChessEngine implements SelfSerializable, Cloneable
 		ChessPiece king = getKing(color);
 		if (!isThreatened(king.getX(), king.getY(), false))
 			return false;
-		for (int[] col : getMovmentMetrix(king.getX(), king.getY(), false))
-			for (int i : col)
-				if (i > 0)
-					return false;
-		return true;
+		return hasAnyMove(king.getX(), king.getY(), true);
 	}
 	
 	public int getWidth() {

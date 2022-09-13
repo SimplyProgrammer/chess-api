@@ -7,6 +7,11 @@ public class Pawn extends ChessPiece
 	}
 	
 	@Override
+	public int[][] generateMovmentMetrix(int[][] newEmptyMetrix, boolean checkIfKingInCheck) {
+		return movmentMetrix = generateMovmentForRange(this, newEmptyMetrix, getMoveCount() < 1 ? 2 : 1, checkIfKingInCheck);
+	}
+	
+	@Override
 	public boolean canMoveTo(int x, int y, boolean checkIfKingInCheck) {
 		return super.canMoveTo(x, y, checkIfKingInCheck) && (canMoveForeward(x, y) || canFork(x, y) || canEnpassant(x, y));
 	}
@@ -17,11 +22,11 @@ public class Pawn extends ChessPiece
 	}
 	
 	public boolean canFork(int x, int y) {
-		return distanceTo(x, y) == 1 && canMoveDiagonal(this, x, y) && !myBoard.isEmpty(x, y);
+		return x != getX() && (getColor() == ChessPiece.BLACK ? y > getY() : y < getY()) && distanceTo(x, y) == 1 && !myBoard.isEmpty(x, y);
 	}
 
 	public boolean canMoveForeward(int x, int y) {
-		return getX() == x && distanceTo(x, y) <= (getMoveCount() > 0 ? 1 : 2) && (getColor() == ChessPiece.BLACK ? y > getY() : y < getY()) && myBoard.isEmpty(x, y) && canMoveStraight(this, x, y);
+		return getX() == x && (getColor() == ChessPiece.BLACK ? y > getY() : y < getY()) && myBoard.isEmpty(x, y) && canMoveStraight(this, x, y);
 	}
 	
 	public boolean canEnpassant(int x, int y) {

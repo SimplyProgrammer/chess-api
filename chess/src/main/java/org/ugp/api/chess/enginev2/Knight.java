@@ -2,20 +2,24 @@ package org.ugp.api.chess.enginev2;
 
 public class Knight extends ChessPiece
 {
+	public static int[][] L_MOVMENT_OFFSETS = {
+		{1, 2},
+		{-1, 2},
+		{1, -2},
+		{-1, -2},
+		{2, 1},
+		{-2, 1},
+		{2, -1},
+		{-2, -1},
+	};
+	
 	public Knight(SimpleChessEngine board, int color, int x, int y) {
 		super(board, ChessPiece.KNIGHT, color, x, y);
 	}
 	
 	@Override
-	public boolean canMoveTo(int x, int y, boolean checkIfKingInCheck) {
-		if (super.canMoveTo(x, y, checkIfKingInCheck)) 
-		{
-			if (Math.abs(getX() - x) == 2 && Math.abs(getY() - y) == 1)
-				return true;
-			if (Math.abs(getX() - x) == 1 && Math.abs(getY() - y) == 2)
-				return true;
-		}
-		return false;
+	public int[][] generateMovmentMetrix(int[][] newEmptyMetrix, boolean checkIfKingInCheck) {
+		return movmentMetrix = generateMovmentFromOffsets(this, newEmptyMetrix, L_MOVMENT_OFFSETS, checkIfKingInCheck);
 	}
 	
 	@Override
@@ -23,3 +27,5 @@ public class Knight extends ChessPiece
 		return new Knight(board, 0, 0, 0);
 	}
 }
+
+

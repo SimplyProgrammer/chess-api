@@ -7,19 +7,12 @@ public class King extends ChessPiece
 	}
 	
 	@Override
-	public boolean canMoveTo(int x, int y, boolean checkIfKingInCheck) {
-		return super.canMoveTo(x, y, checkIfKingInCheck) && distanceTo(x, y) == 1 && !isThreatened(x, y);
+	public int[][] generateMovmentMetrix(int[][] newEmptyMetrix, boolean checkIfKingInCheck) {
+		return movmentMetrix = generateMovmentForRange(this, newEmptyMetrix, 1, checkIfKingInCheck);
 	}
 	
 	@Override
 	protected ChessPiece newInstance(SimpleChessEngine board) {
 		return new King(board, 0, 0, 0);
-	}
-	
-	public boolean isThreatened(int x, int y) {
-		myBoard.remove(this);
-		boolean isTileThreatened = myBoard.isThreatened(x, y, false);
-		myBoard.put(this);
-		return isTileThreatened;
 	}
 }

@@ -8,6 +8,20 @@ public class ChessPiece implements SelfSerializable, Cloneable
 	public static final int BLACK = 0, WHITE = 1;
 	public static final String KING = "k", QUEEN = "q", BISHOP = "b", ROOK = "r", KNIGHT = "n", PAWN = "p";
 	
+	public static final int[][] STRAIGHT_DIRS = {
+		{1, 0},
+		{-1, 0},
+		{0, 1},
+		{0, -1}
+	};
+	
+	public static final int[][] DIAGONAL_DIRS = {
+		{1, 1},
+		{-1, -1},
+		{-1, 1},
+		{1, -1}
+	};
+	
 	protected int x, y;
 	protected int color;
 	protected int moveCount;
@@ -56,6 +70,17 @@ public class ChessPiece implements SelfSerializable, Cloneable
 		return new ChessPiece(board, null, 0, 0, 0);
 	}
 	
+	public int[][] generateMovmentMetrix(int[][] newEmptyMetrix, boolean checkIfKingInCheck) {
+		for (int px = 0; px < newEmptyMetrix[0].length; px++) {
+			for (int py = 0; py < newEmptyMetrix.length; py++) {
+				if (canMoveTo(px, py, checkIfKingInCheck))
+					newEmptyMetrix[py][px]++;
+			}
+		}
+		
+		return movmentMetrix = newEmptyMetrix;
+	}
+	
 	public boolean canMoveTo(int x, int y, boolean checkIfKingInCheck) {
 		if (!myBoard.isInBounds(x, y))
 			return false;
@@ -63,7 +88,7 @@ public class ChessPiece implements SelfSerializable, Cloneable
 		ChessPiece piece = myBoard.get(x, y);
 		if (piece == null || piece.getColor() != getColor()) 
 		{
-			if (checkIfKingInCheck && getType() != KING)
+			if (checkIfKingInCheck)
 			{
 				SimpleChessEngine cloneBoard = myBoard.clone();
 				if ((piece = cloneBoard.get(getX(), getY())) == null)
@@ -97,6 +122,7 @@ public class ChessPiece implements SelfSerializable, Cloneable
 		ChessPiece piece = myBoard.put(this, x, y);
 		if (piece != null)
 		{
+			this.moveCount++;
 			myBoard.remove(getX(), getY());
 			this.x = x;
 			this.y = y;
@@ -107,14 +133,15 @@ public class ChessPiece implements SelfSerializable, Cloneable
 	public void kill() {
 		myBoard.remove(this);
 	}
-	
-	public boolean isThreatened() {
-		return myBoard.isThreatened(getX(), getY(), getType() != ChessPiece.KING);
-	}
-	
+
 	public ChessPiece getNeighbour(int offX, int offY) 
 	{
 		return myBoard.get(x + offX, y + offY);
+	}
+	
+	public int distanceTo(int x, int y) {
+		int distX = Math.abs(x - getX()), distY = Math.abs(y - getY());
+		return Math.max(distX, distY);
 	}
 	
 	public int getX() {
@@ -143,6 +170,43 @@ public class ChessPiece implements SelfSerializable, Cloneable
 	
 	public int[][] getMovmentMetrix() {
 		return movmentMetrix;
+	}
+	
+	public static int[][] generateMovmentFromOffsets(ChessPiece piece, int[][] newEmptyMetrix, int[][] offsets, boolean checkIfKingInCheck) {
+		int myX = piece.getX(), myY = piece.getY();
+		for (int[] offset : offsets) {
+			if (piece.canMoveTo(myX + offset[0], myY + offset[1], checkIfKingInCheck))
+				newEmptyMetrix[myY + offset[1]][myX + offset[0]]++;
+		}
+		
+		return newEmptyMetrix;
+	}
+	
+	public static int[][] generateMovmentForRange(ChessPiece piece, int[][] newEmptyMetrix, int range, boolean checkIfKingInCheck) {
+		int myX = piece.getX(), myY = piece.getY();
+		for (int px = myX - range; px <= myX + range; px++) {
+			for (int py = myY - range; py <= myY + range; py++) {
+				if (piece.canMoveTo(px, py, checkIfKingInCheck))
+					newEmptyMetrix[py][px]++;
+			}
+		}
+		
+		return newEmptyMetrix;
+	}
+	
+	public static int[][] generateMovmentFromDirs(ChessPiece piece, int[][] newEmptyMetrix, int[][] directions, boolean checkIfKingInCheck) {
+		int w = newEmptyMetrix[0].length, h = newEmptyMetrix.length;
+		for (int[] dirs : directions) {
+			int xDir = dirs[0], yDir = dirs[1];
+			for (int x = piece.getX() + xDir, y = piece.getY() + yDir; x >= 0 && y >= 0 && x < w && y < h; x += xDir, y += yDir) {
+				if (piece.canMoveTo(x, y, checkIfKingInCheck))
+					newEmptyMetrix[y][x]++;
+				if (!piece.getMyBoard().isEmpty(x, y))
+					break;
+			}
+		}
+		
+		return newEmptyMetrix;
 	}
 
 	public static boolean canMoveStraight(ChessPiece piece, int x, int y) {
@@ -225,10 +289,5 @@ public class ChessPiece implements SelfSerializable, Cloneable
 		}
 		
 		return false;
-	}
-	
-	public int distanceTo(int x, int y) {
-		int distX = Math.abs(x - getX()), distY = Math.abs(y - getY());
-		return Math.max(distX, distY);
 	}
 }

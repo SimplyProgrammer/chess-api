@@ -7,8 +7,8 @@ public class Rook extends ChessPiece
 	}
 	
 	@Override
-	public boolean canMoveTo(int x, int y, boolean checkIfKingInCheck) {
-		return super.canMoveTo(x, y, checkIfKingInCheck) && canMoveStraight(this, x, y);
+	public int[][] generateMovmentMetrix(int[][] newEmptyMetrix, boolean checkIfKingInCheck) {
+		return movmentMetrix = generateMovmentFromDirs(this, newEmptyMetrix, STRAIGHT_DIRS, checkIfKingInCheck);
 	}
 	
 	@Override

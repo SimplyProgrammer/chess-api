@@ -8,8 +8,8 @@ public class Bishop extends ChessPiece
 	}
 	
 	@Override
-	public boolean canMoveTo(int x, int y, boolean checkIfKingInCheck) {
-		return super.canMoveTo(x, y, checkIfKingInCheck) && canMoveDiagonal(this, x, y);
+	public int[][] generateMovmentMetrix(int[][] newEmptyMetrix, boolean checkIfKingInCheck) {
+		return movmentMetrix = generateMovmentFromDirs(this, newEmptyMetrix, DIAGONAL_DIRS, checkIfKingInCheck);
 	}
 	
 	@Override

@@ -7,8 +7,8 @@ public class Queen extends ChessPiece
 	}
 	
 	@Override
-	public boolean canMoveTo(int x, int y, boolean checkIfKingInCheck) {
-		return super.canMoveTo(x, y, checkIfKingInCheck) && (canMoveStraight(this, x, y) || canMoveDiagonal(this, x, y));
+	public int[][] generateMovmentMetrix(int[][] newEmptyMetrix, boolean checkIfKingInCheck) {
+		return movmentMetrix = generateMovmentFromDirs(this, generateMovmentFromDirs(this, newEmptyMetrix, STRAIGHT_DIRS, checkIfKingInCheck), DIAGONAL_DIRS, checkIfKingInCheck);
 	}
 	
 	@Override
