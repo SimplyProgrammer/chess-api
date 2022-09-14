@@ -1,5 +1,0 @@
-package org.ugp.api.chess.engine;
-
-public class Pawn {
-
-}

@@ -24,13 +24,13 @@ public class HelloWorld
 			config.jsonMapper(new JavalinSerialXJson());
 			config.contextPath = "/api/v1/";
 		    config.enableCorsForAllOrigins();
-		}).start("192.168.100.88", 8989);
-		 
+		}).start("192.168.100.174", 8989);
+
 		var<ChessGameSession> sessions = new ArrayList<>();
 		app.get("/game/new", ctx -> {
 			var newSession = new ChessGameSession();
 			sessions.add(newSession.begin(app));
-			ctx.json(newSession);
+			ctx.json(newSession.getSessionId());
 		});
 		
 		app.get("/games", ctx -> {

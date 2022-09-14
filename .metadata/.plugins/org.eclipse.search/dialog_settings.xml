@@ -38,10 +38,10 @@
 		<item key="SEARCH_IN_BINARIES" value="false"/>
 		<item key="HISTORY_SIZE" value="12"/>
 		<section name="HISTORY0">
-			<item key="ignoreCase" value="true"/>
-			<item key="isRegExSearch" value="true"/>
+			<item key="ignoreCase" value="false"/>
+			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="chessBoard"/>
+			<item key="textPattern" value="System.out"/>
 			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*.java"/>
@@ -53,10 +53,10 @@
 			<item key="0" value="*.java"/>
 		</section>
 		<section name="HISTORY1">
-			<item key="ignoreCase" value="true"/>
-			<item key="isRegExSearch" value="true"/>
+			<item key="ignoreCase" value="false"/>
+			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value=".\{"/>
+			<item key="textPattern" value="&quot;k&quot;"/>
 			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*.java"/>
@@ -68,7 +68,7 @@
 			<item key="ignoreCase" value="false"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="yLoc"/>
+			<item key="textPattern" value="canMoveTo(int x, int y)"/>
 			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*.java"/>
@@ -80,7 +80,7 @@
 			<item key="ignoreCase" value="false"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="xLoc"/>
+			<item key="textPattern" value="super.canMoveTo(x, y)"/>
 			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*.java"/>
@@ -89,10 +89,10 @@
 			</list>
 		</section>
 		<section name="HISTORY4">
-			<item key="ignoreCase" value="false"/>
-			<item key="isRegExSearch" value="false"/>
+			<item key="ignoreCase" value="true"/>
+			<item key="isRegExSearch" value="true"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="yPosition"/>
+			<item key="textPattern" value="chessBoard"/>
 			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*.java"/>
@@ -101,10 +101,10 @@
 			</list>
 		</section>
 		<section name="HISTORY5">
-			<item key="ignoreCase" value="false"/>
-			<item key="isRegExSearch" value="false"/>
+			<item key="ignoreCase" value="true"/>
+			<item key="isRegExSearch" value="true"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="xPosition"/>
+			<item key="textPattern" value=".\{"/>
 			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*.java"/>
@@ -116,7 +116,7 @@
 			<item key="ignoreCase" value="false"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="yDimension"/>
+			<item key="textPattern" value="yLoc"/>
 			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*.java"/>
@@ -128,7 +128,7 @@
 			<item key="ignoreCase" value="false"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="xDimension"/>
+			<item key="textPattern" value="xLoc"/>
 			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*.java"/>
@@ -140,7 +140,7 @@
 			<item key="ignoreCase" value="false"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="private"/>
+			<item key="textPattern" value="yPosition"/>
 			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*.java"/>
@@ -152,7 +152,7 @@
 			<item key="ignoreCase" value="false"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="getYDimension"/>
+			<item key="textPattern" value="xPosition"/>
 			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*.java"/>
@@ -164,7 +164,7 @@
 			<item key="ignoreCase" value="false"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="getXDimension"/>
+			<item key="textPattern" value="yDimension"/>
 			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*.java"/>
@@ -176,7 +176,7 @@
 			<item key="ignoreCase" value="false"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="if("/>
+			<item key="textPattern" value="xDimension"/>
 			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*.java"/>
@@ -193,13 +193,16 @@
 	</section>
 	<section name="ReplaceDialog2">
 		<list key="replace_with">
+			<item value="canMoveTo(int x, int y, boolean checkIfKingInCheck)"/>
+			<item value="canMoveTo(x, y, checkIfKingInCheck)"/>
+			<item value="super.canMoveTo(x, y, checkIfKingInCheck)"/>
 			<item value="myBoard"/>
 			<item value="y"/>
 			<item value="x"/>
 			<item value="height"/>
-			<item value="width"/>
-			<item value="protected"/>
-			<item value="getHeight"/>
 		</list>
+	</section>
+	<section name="">
+		<item key="org.eclipse.search.resultpage.limit" value="1000"/>
 	</section>
 </section>

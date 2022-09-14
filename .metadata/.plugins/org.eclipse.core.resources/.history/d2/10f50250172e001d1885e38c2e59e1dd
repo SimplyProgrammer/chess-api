@@ -1,7 +1,0 @@
-package org.ugp.api.chess;
-
-import io.javalin.plugin.json.JsonMapper;
-
-public class JavalinJson implements JsonMapper {
-
-}
