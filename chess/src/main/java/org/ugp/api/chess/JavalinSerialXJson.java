@@ -12,7 +12,10 @@ public class JavalinSerialXJson implements JsonMapper {
 	@Override
 	public String toJsonString(Object obj) {
 		try {
-			return new JsonSerializer(obj).Stringify();
+			JsonSerializer srl = new JsonSerializer(obj);
+			if (obj instanceof WsScope)
+				srl.put("type", ((WsScope) obj).getType());
+			return srl.Stringify();
 		} catch (IOException e) {
 			e.printStackTrace();
 			return e.toString();

@@ -7171,3 +7171,390 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.ugp:seria
 2022-09-13 22:28:51,771 [Worker-22: http://dl.bintray.com/nodeclipse/nodeclipse/0.15.1/artifacts.xml] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {}->http://dl.bintray.com:80
 2022-09-13 22:28:53,416 [Worker-22: http://dl.bintray.com/satyagraha/generic/2.0.1/artifacts.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {}->http://dl.bintray.com:80
 2022-09-13 22:28:53,560 [Worker-23: http://dl.bintray.com/satyagraha/generic/2.0.1/artifacts.xml] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {}->http://dl.bintray.com:80
+2022-09-19 14:41:44,632 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2022-09-19 14:41:47,946 [main] ERROR o.e.m.e.x.p.MavenStructuredPomEditorPageFactory - Cannot determine URI for '/chess/pom.xml'.
+org.eclipse.ui.PartInitException: Cannot determine URI for '/chess/pom.xml'.
+	at org.eclipse.ui.texteditor.AbstractTextEditor.internalInit(AbstractTextEditor.java:3193) ~[na:na]
+	at org.eclipse.ui.texteditor.AbstractTextEditor.init(AbstractTextEditor.java:3204) ~[na:na]
+	at org.eclipse.wst.sse.ui.StructuredTextEditor.init(StructuredTextEditor.java:2739) ~[na:na]
+	at org.eclipse.ui.part.MultiPageEditorPart.addPage(MultiPageEditorPart.java:224) ~[na:na]
+	at org.eclipse.ui.forms.editor.FormEditor.addPage(FormEditor.java:331) ~[na:na]
+	at org.eclipse.ui.part.MultiPageEditorPart.addPage(MultiPageEditorPart.java:203) ~[na:na]
+	at org.eclipse.ui.forms.editor.FormEditor.addPage(FormEditor.java:313) ~[na:na]
+	at org.eclipse.m2e.editor.xml.pomeditor.MavenStructuredPomEditorPageFactory.addPages(MavenStructuredPomEditorPageFactory.java:34) ~[na:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.addEditorPageExtensions(MavenPomEditor.java:426) ~[na:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.addPages(MavenPomEditor.java:330) ~[na:na]
+	at org.eclipse.ui.forms.editor.FormEditor.createPages(FormEditor.java:143) ~[na:na]
+	at org.eclipse.ui.part.MultiPageEditorPart.createPartControl(MultiPageEditorPart.java:333) ~[na:na]
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:158) ~[na:na]
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor.createPartControl(CompatibilityEditor.java:96) ~[na:na]
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:365) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58) ~[na:na]
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:995) ~[na:na]
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:960) ~[na:na]
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:140) ~[na:na]
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:403) ~[na:na]
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:330) ~[na:na]
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:202) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:91) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42) ~[na:na]
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:995) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:659) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728) ~[na:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) ~[org.eclipse.equinox.common_3.16.100.v20220315-2327.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.lambda$0(PartServiceImpl.java:105) ~[na:na]
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38) ~[na:na]
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:183) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133) ~[na:na]
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4790) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.e4.ui.workbench.swt.DisplayUISynchronize.syncExec(DisplayUISynchronize.java:34) ~[na:na]
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38) ~[na:na]
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205) ~[na:na]
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203) ~[na:na]
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1) ~[na:na]
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:133) ~[na:na]
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75) ~[na:na]
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44) ~[na:na]
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63) ~[na:na]
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424) ~[org.eclipse.emf.common_2.25.0.v20220325-0806.jar:na]
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElementGen(ElementContainerImpl.java:170) ~[na:na]
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:188) ~[na:na]
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.lambda$4(StackRenderer.java:975) ~[na:na]
+	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:84) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4251) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:778) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.custom.CTabFolder.setSelection(CTabFolder.java:3248) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:1882) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.custom.CTabFolder.lambda$0(CTabFolder.java:331) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4251) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4068) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3645) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155) ~[na:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155) ~[na:na]
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644) ~[na:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338) ~[na:na]
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551) ~[na:na]
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156) ~[na:na]
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152) ~[na:na]
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203) ~[org.eclipse.equinox.app_1.6.100.v20211021-1418.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659) ~[org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar:na]
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596) ~[org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar:na]
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467) ~[org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar:na]
+Caused by: org.eclipse.core.runtime.CoreException: Cannot determine URI for '/chess/pom.xml'.
+	at org.eclipse.core.internal.filebuffers.ResourceFileBuffer.create(ResourceFileBuffer.java:239) ~[na:na]
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager.connect(TextFileBufferManager.java:115) ~[na:na]
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.createFileInfo(TextFileDocumentProvider.java:563) ~[na:na]
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.connect(TextFileDocumentProvider.java:481) ~[na:na]
+	at org.eclipse.ui.texteditor.AbstractTextEditor.doSetInput(AbstractTextEditor.java:4172) ~[na:na]
+	at org.eclipse.ui.texteditor.StatusTextEditor.doSetInput(StatusTextEditor.java:262) ~[na:na]
+	at org.eclipse.ui.texteditor.AbstractDecoratedTextEditor.doSetInput(AbstractDecoratedTextEditor.java:1479) ~[na:na]
+	at org.eclipse.ui.editors.text.TextEditor.doSetInput(TextEditor.java:153) ~[na:na]
+	at org.eclipse.wst.sse.ui.StructuredTextEditor.doSetInput(StructuredTextEditor.java:2037) ~[na:na]
+	at org.eclipse.ui.texteditor.AbstractTextEditor.lambda$1(AbstractTextEditor.java:3162) ~[na:na]
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:434) ~[org.eclipse.jface_3.26.0.v20220513-0449.jar:na]
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:352) ~[org.eclipse.jface_3.26.0.v20220513-0449.jar:na]
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$7(WorkbenchWindow.java:2345) ~[na:na]
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2343) ~[na:na]
+	at org.eclipse.ui.texteditor.AbstractTextEditor.internalInit(AbstractTextEditor.java:3179) ~[na:na]
+	... 93 common frames omitted
+2022-09-19 14:41:47,968 [main] ERROR o.e.m2e.editor.pom.MavenPomEditor - Cannot determine URI for '/chess/pom.xml'.
+org.eclipse.ui.PartInitException: Cannot determine URI for '/chess/pom.xml'.
+	at org.eclipse.ui.texteditor.AbstractTextEditor.internalInit(AbstractTextEditor.java:3193) ~[na:na]
+	at org.eclipse.ui.texteditor.AbstractTextEditor.init(AbstractTextEditor.java:3204) ~[na:na]
+	at org.eclipse.ui.part.MultiPageEditorPart.addPage(MultiPageEditorPart.java:224) ~[na:na]
+	at org.eclipse.ui.forms.editor.FormEditor.addPage(FormEditor.java:331) ~[na:na]
+	at org.eclipse.ui.part.MultiPageEditorPart.addPage(MultiPageEditorPart.java:203) ~[na:na]
+	at org.eclipse.ui.forms.editor.FormEditor.addPage(FormEditor.java:313) ~[na:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.addFallbackEditors(MavenPomEditor.java:357) ~[na:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.addPages(MavenPomEditor.java:331) ~[na:na]
+	at org.eclipse.ui.forms.editor.FormEditor.createPages(FormEditor.java:143) ~[na:na]
+	at org.eclipse.ui.part.MultiPageEditorPart.createPartControl(MultiPageEditorPart.java:333) ~[na:na]
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:158) ~[na:na]
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor.createPartControl(CompatibilityEditor.java:96) ~[na:na]
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:365) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58) ~[na:na]
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:995) ~[na:na]
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:960) ~[na:na]
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:140) ~[na:na]
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:403) ~[na:na]
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:330) ~[na:na]
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:202) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:91) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42) ~[na:na]
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:995) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:659) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728) ~[na:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) ~[org.eclipse.equinox.common_3.16.100.v20220315-2327.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.lambda$0(PartServiceImpl.java:105) ~[na:na]
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38) ~[na:na]
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:183) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133) ~[na:na]
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4790) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.e4.ui.workbench.swt.DisplayUISynchronize.syncExec(DisplayUISynchronize.java:34) ~[na:na]
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38) ~[na:na]
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205) ~[na:na]
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203) ~[na:na]
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1) ~[na:na]
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:133) ~[na:na]
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75) ~[na:na]
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44) ~[na:na]
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63) ~[na:na]
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424) ~[org.eclipse.emf.common_2.25.0.v20220325-0806.jar:na]
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElementGen(ElementContainerImpl.java:170) ~[na:na]
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:188) ~[na:na]
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.lambda$4(StackRenderer.java:975) ~[na:na]
+	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:84) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4251) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:778) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.custom.CTabFolder.setSelection(CTabFolder.java:3248) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:1882) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.custom.CTabFolder.lambda$0(CTabFolder.java:331) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4251) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4068) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3645) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155) ~[na:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046) ~[na:na]
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155) ~[na:na]
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644) ~[na:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338) ~[na:na]
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551) ~[na:na]
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156) ~[na:na]
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152) ~[na:na]
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203) ~[org.eclipse.equinox.app_1.6.100.v20211021-1418.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255) ~[org.eclipse.osgi_3.18.0.v20220516-2155.jar:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659) ~[org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar:na]
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596) ~[org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar:na]
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467) ~[org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar:na]
+Caused by: org.eclipse.core.runtime.CoreException: Cannot determine URI for '/chess/pom.xml'.
+	at org.eclipse.core.internal.filebuffers.ResourceFileBuffer.create(ResourceFileBuffer.java:239) ~[na:na]
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager.connect(TextFileBufferManager.java:115) ~[na:na]
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.createFileInfo(TextFileDocumentProvider.java:563) ~[na:na]
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.connect(TextFileDocumentProvider.java:481) ~[na:na]
+	at org.eclipse.ui.texteditor.AbstractTextEditor.doSetInput(AbstractTextEditor.java:4172) ~[na:na]
+	at org.eclipse.ui.texteditor.StatusTextEditor.doSetInput(StatusTextEditor.java:262) ~[na:na]
+	at org.eclipse.ui.texteditor.AbstractDecoratedTextEditor.doSetInput(AbstractDecoratedTextEditor.java:1479) ~[na:na]
+	at org.eclipse.ui.editors.text.TextEditor.doSetInput(TextEditor.java:153) ~[na:na]
+	at org.eclipse.ui.internal.genericeditor.ExtensionBasedTextEditor.doSetInput(ExtensionBasedTextEditor.java:86) ~[na:na]
+	at org.eclipse.ui.texteditor.AbstractTextEditor.lambda$1(AbstractTextEditor.java:3162) ~[na:na]
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:434) ~[org.eclipse.jface_3.26.0.v20220513-0449.jar:na]
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:352) ~[org.eclipse.jface_3.26.0.v20220513-0449.jar:na]
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$7(WorkbenchWindow.java:2345) ~[na:na]
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74) ~[org.eclipse.swt.win32.win32.x86_64_3.120.0.v20220530-1036.jar:na]
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2343) ~[na:na]
+	at org.eclipse.ui.texteditor.AbstractTextEditor.internalInit(AbstractTextEditor.java:3179) ~[na:na]
+	... 91 common frames omitted
+2022-09-19 14:44:47,996 [Worker-16: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.ugp.api:chess:0.0.1-SNAPSHOT @ C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\pom.xml.
+2022-09-19 14:44:48,892 [Worker-16: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 1 sec
+2022-09-19 14:44:50,754 [Worker-4: Discover lifecycle mappings] INFO  o.e.m.i.discovery.MavenDiscovery - No lifecyle mapping found at jar:file:/C:/Users/user/AppData/Local/Temp/RemoteBundleDiscoveryStrategy11036167894322093493.tmp/org.eclipse.m2e.discovery.oss_catalog_1.14.jar_13735800591307190292.jar!/lifecycle%2Forg.eclipse.m2e.discovery.lifecyclemapping.m2e-wtp.xml
+2022-09-19 14:44:50,765 [Worker-4: Discover lifecycle mappings] WARN  o.e.m.i.discovery.MavenDiscovery - CatalogItem org.eclipse.m2e.discovery.lifecyclemapping.m2e-wtp does not contain lifecycle mapping metadata
+2022-09-19 14:44:50,769 [Worker-4: Discover lifecycle mappings] INFO  o.e.m.i.discovery.MavenDiscovery - No lifecyle mapping found at jar:file:/C:/Users/user/AppData/Local/Temp/RemoteBundleDiscoveryStrategy11036167894322093493.tmp/org.eclipse.m2e.discovery.oss_catalog_1.14.jar_13735800591307190292.jar!/lifecycle%2Forg.eclipse.m2e.discovery.lifecyclemapping.m2e-egit.xml
+2022-09-19 14:44:50,770 [Worker-4: Discover lifecycle mappings] WARN  o.e.m.i.discovery.MavenDiscovery - CatalogItem org.eclipse.m2e.discovery.lifecyclemapping.m2e-egit does not contain lifecycle mapping metadata
+2022-09-19 14:44:50,776 [Worker-4: Discover lifecycle mappings] INFO  o.e.m.i.discovery.MavenDiscovery - No lifecyle mapping found at jar:file:/C:/Users/user/AppData/Local/Temp/RemoteBundleDiscoveryStrategy11036167894322093493.tmp/org.eclipse.m2e.discovery.oss_catalog_1.14.jar_13735800591307190292.jar!/lifecycle%2Forg.eclipse.m2e.discovery.lifecyclemapping.m2e-subversive.xml
+2022-09-19 14:44:50,777 [Worker-4: Discover lifecycle mappings] WARN  o.e.m.i.discovery.MavenDiscovery - CatalogItem org.eclipse.m2e.discovery.lifecyclemapping.m2e-subversive does not contain lifecycle mapping metadata
+2022-09-19 14:44:50,817 [Worker-4: Discover lifecycle mappings] INFO  o.e.m.i.discovery.MavenDiscovery - No lifecyle mapping found at jar:file:/C:/Users/user/AppData/Local/Temp/RemoteBundleDiscoveryStrategy11036167894322093493.tmp/org.eclipse.m2e.discovery.oss_catalog_1.14.jar_13735800591307190292.jar!/lifecycle%2Forg.eclipse.m2e.discovery.extras.m2e-chromatic.xml
+2022-09-19 14:44:50,817 [Worker-4: Discover lifecycle mappings] WARN  o.e.m.i.discovery.MavenDiscovery - CatalogItem org.eclipse.m2e.discovery.extras.m2e-chromatic does not contain lifecycle mapping metadata
+2022-09-19 14:44:52,535 [Worker-22: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 14:44:52,538 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\main\resources
+2022-09-19 14:44:52,540 [Worker-22: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 14:44:52,549 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\test\resources
+2022-09-19 14:45:00,858 [Worker-24: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-09-19 14:45:00,907 [Worker-24: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.ugp.api:chess:0.0.1-SNAPSHOT @ C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\pom.xml.
+2022-09-19 14:45:01,131 [Worker-24: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2022-09-19 14:45:01,618 [Worker-23: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 14:45:01,622 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\main\resources
+2022-09-19 14:45:01,624 [Worker-23: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 14:45:01,629 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\test\resources
+2022-09-19 14:45:11,969 [Worker-16: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.ugp.api:chess:0.0.1-SNAPSHOT @ C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\pom.xml.
+2022-09-19 14:45:12,149 [Worker-16: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 14:45:12,152 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\main\resources
+2022-09-19 14:45:12,154 [Worker-16: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 14:45:12,157 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\test\resources
+2022-09-19 14:45:19,667 [Worker-22: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-09-19 14:45:19,703 [Worker-22: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.ugp.api:chess:0.0.1-SNAPSHOT @ C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\pom.xml.
+2022-09-19 14:45:19,851 [Worker-22: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2022-09-19 14:45:20,248 [Worker-26: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 14:45:20,256 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\main\resources
+2022-09-19 14:45:20,259 [Worker-26: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 14:45:20,265 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\test\resources
+2022-09-19 14:45:40,252 [Worker-16: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 14:45:40,254 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\main\resources
+2022-09-19 14:45:40,255 [Worker-16: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 14:45:40,258 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\test\resources
+2022-09-19 14:48:43,423 [Worker-23: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 14:48:43,426 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\main\resources
+2022-09-19 14:48:43,427 [Worker-23: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 14:48:43,430 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\test\resources
+2022-09-19 15:10:19,087 [Worker-22: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:10:19,090 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\main\resources
+2022-09-19 15:10:19,091 [Worker-22: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:10:19,093 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\test\resources
+2022-09-19 15:10:31,697 [Worker-26: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:10:31,700 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\main\resources
+2022-09-19 15:10:31,701 [Worker-26: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:10:31,704 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\test\resources
+2022-09-19 15:39:28,132 [Worker-37: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:39:28,135 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\main\resources
+2022-09-19 15:39:28,136 [Worker-37: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:39:28,138 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\test\resources
+2022-09-19 15:39:33,898 [Worker-39: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:39:33,901 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\main\resources
+2022-09-19 15:39:33,901 [Worker-39: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:39:33,904 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\test\resources
+2022-09-19 15:39:38,378 [Worker-46: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:39:38,381 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\main\resources
+2022-09-19 15:39:38,383 [Worker-46: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:39:38,385 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\test\resources
+2022-09-19 15:40:11,999 [Worker-44: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:40:12,001 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\main\resources
+2022-09-19 15:40:12,002 [Worker-44: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:40:12,004 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\test\resources
+2022-09-19 15:40:52,708 [Worker-45: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:40:52,710 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\main\resources
+2022-09-19 15:40:52,711 [Worker-45: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:40:52,713 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\test\resources
+2022-09-19 15:41:43,778 [Worker-37: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:41:43,780 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\main\resources
+2022-09-19 15:41:43,781 [Worker-37: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:41:43,783 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\test\resources
+2022-09-19 15:42:54,717 [Worker-46: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:42:54,720 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\main\resources
+2022-09-19 15:42:54,721 [Worker-46: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:42:54,723 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\test\resources
+2022-09-19 15:43:26,620 [Worker-37: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:43:26,622 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\main\resources
+2022-09-19 15:43:26,623 [Worker-37: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:43:26,626 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\test\resources
+2022-09-19 15:43:32,510 [Worker-37: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:43:32,512 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\main\resources
+2022-09-19 15:43:32,513 [Worker-37: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:43:32,515 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\test\resources
+2022-09-19 15:43:56,015 [Worker-46: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:43:56,018 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\main\resources
+2022-09-19 15:43:56,019 [Worker-46: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:43:56,022 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\test\resources
+2022-09-19 15:44:01,191 [Worker-39: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:44:01,193 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\main\resources
+2022-09-19 15:44:01,194 [Worker-39: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:44:01,197 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\test\resources
+2022-09-19 15:44:19,017 [Worker-44: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:44:19,019 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\main\resources
+2022-09-19 15:44:19,021 [Worker-44: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:44:19,024 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\test\resources
+2022-09-19 15:44:55,292 [Worker-37: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:44:55,295 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\main\resources
+2022-09-19 15:44:55,296 [Worker-37: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:44:55,298 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\test\resources
+2022-09-19 15:46:41,044 [Worker-37: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:46:41,046 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\main\resources
+2022-09-19 15:46:41,047 [Worker-37: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:46:41,052 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\test\resources
+2022-09-19 15:46:56,262 [Worker-37: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:46:56,265 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\main\resources
+2022-09-19 15:46:56,266 [Worker-37: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:46:56,269 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\test\resources
+2022-09-19 15:48:05,858 [Worker-36: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:48:05,860 [Worker-36: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\main\resources
+2022-09-19 15:48:05,870 [Worker-36: Launching HelloWorld] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:48:05,873 [Worker-36: Launching HelloWorld] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\test\resources
+2022-09-19 15:49:47,231 [Worker-48: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:49:47,233 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\main\resources
+2022-09-19 15:49:47,234 [Worker-48: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:49:47,236 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\test\resources
+2022-09-19 15:50:38,232 [Worker-48: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:50:38,234 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\main\resources
+2022-09-19 15:50:38,235 [Worker-48: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:50:38,237 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\test\resources
+2022-09-19 15:50:43,279 [Worker-36: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:50:43,281 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\main\resources
+2022-09-19 15:50:43,282 [Worker-36: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:50:43,285 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\test\resources
+2022-09-19 15:51:19,576 [Worker-37: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:51:19,579 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\main\resources
+2022-09-19 15:51:19,580 [Worker-37: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:51:19,582 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\test\resources
+2022-09-19 15:54:12,121 [Worker-37: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:54:12,123 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\main\resources
+2022-09-19 15:54:12,124 [Worker-37: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:54:12,126 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\test\resources
+2022-09-19 15:54:26,271 [Worker-39: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:54:26,274 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\main\resources
+2022-09-19 15:54:26,275 [Worker-39: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:54:26,278 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\test\resources
+2022-09-19 15:55:00,418 [Worker-37: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:55:00,421 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\main\resources
+2022-09-19 15:55:00,422 [Worker-37: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:55:00,424 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\test\resources
+2022-09-19 15:55:36,086 [Worker-39: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:55:36,089 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\main\resources
+2022-09-19 15:55:36,090 [Worker-39: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:55:36,092 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\test\resources
+2022-09-19 15:56:21,588 [Worker-37: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:56:21,591 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\main\resources
+2022-09-19 15:56:21,592 [Worker-37: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:56:21,594 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\test\resources
+2022-09-19 15:58:26,665 [Worker-39: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:58:26,667 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\main\resources
+2022-09-19 15:58:26,668 [Worker-39: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 15:58:26,670 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\test\resources
+2022-09-19 16:00:00,446 [Worker-50: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 16:00:00,449 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\main\resources
+2022-09-19 16:00:00,450 [Worker-50: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 16:00:00,453 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\test\resources
+2022-09-19 16:00:08,216 [Worker-36: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-09-19 16:00:08,218 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\user\Desktop\Workspaces\Java\chess-api\chess\src\main\resources
+2022-09-19 16:00:08,219 [Worker-36: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1250 actually) to copy filtered resources, i.e. build is platform dependent!

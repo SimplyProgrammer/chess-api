@@ -1,16 +1,12 @@
 
 package org.ugp.api.chess;
 
-import static io.javalin.apibuilder.ApiBuilder.*;
-import static java.lang.Integer.parseInt;
-
 import java.util.ArrayList;
 import java.util.UUID;
 
 import org.ugp.api.chess.HelloWorld.ChessGameSession;
 import org.ugp.api.chess.enginev2.ChessPiece;
 import org.ugp.api.chess.enginev2.SimpleChessEngine;
-import org.ugp.serialx.JussSerializer;
 import org.ugp.serialx.Scope;
 import org.ugp.serialx.protocols.SelfSerializable;
 
@@ -23,7 +19,7 @@ public class HelloWorld
 			config.jsonMapper(new JavalinSerialXJson());
 			config.contextPath = "/api/v1/";
 		    config.enableCorsForAllOrigins();
-		}).start("192.168.100.174", 8989);
+		}).start("192.168.68.125", 8989);
 
 //		app.ws("/chat", ws -> {
 //            ws.onConnect(ctx -> {
@@ -70,6 +66,7 @@ public class HelloWorld
 
 		public ChessGameSession() {
 			engine = new SimpleChessEngine(8, 8, ChessPiece.WHITE);
+			sessionID = UUID.randomUUID() + "-" + hashCode();
 			
 			for (int x = 0; x < 8; x++) {
 				engine.put("p", ChessPiece.BLACK, x, 1);
@@ -99,13 +96,13 @@ public class HelloWorld
 			app.ws("/game/" + getSessionId(), ws -> {
 	            ws.onConnect(ctx -> {
 	            	System.out.println("Conected " + ctx.getSessionId() + " " + ctx.host());
-	            	ctx.send(this);
+	            	ctx.send(new WsScope("init", this));
 	            });
 	            ws.onMessage(ctx -> {
-	            	WsRequest req = ctx.messageAsClass(WsRequest.class);
+	            	WsScope req = ctx.messageAsClass(WsScope.class);
 	            	
 	            	String type = req.getType();
-	            	if (type.equals("move")) {
+	            	if ("move".equals(type)) {
 	            		int x = req.getInt("x", -1), y = req.getInt("y", -1);
 						int newX = req.getInt("newX", -1), newY = req.getInt("newY", -1);
 						if (!engine.moveIfCan(x, y, newX, newY))
@@ -133,7 +130,7 @@ public class HelloWorld
 
 						ctx.send(checkInfo);
 	            	}
-	            	else if (type.equals("movmentMetrix")) {
+	            	else if ("movmentMetrix".equals(type)) {
 	            		int x = req.getInt("x", -1), y = req.getInt("y", -1);
 					
 //						double t0 = System.nanoTime(), t;
