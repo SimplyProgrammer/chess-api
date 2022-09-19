@@ -10,9 +10,4 @@ public class King extends ChessPiece
 	public int[][] generateMovmentMetrix(int[][] newEmptyMetrix, boolean checkIfKingInCheck) {
 		return movmentMetrix = generateMovmentForRange(this, newEmptyMetrix, 1, checkIfKingInCheck);
 	}
-	
-	@Override
-	protected ChessPiece newInstance(SimpleChessEngine board) {
-		return new King(board, 0, 0, 0);
-	}
 }

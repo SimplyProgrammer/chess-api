@@ -7,7 +7,7 @@ public class SimpleChessEngine implements SelfSerializable, Cloneable
 {
 	protected ChessPiece[][] pieces;
 	protected int onTurn;
-	protected ChessPiece[] kings = new ChessPiece[2];
+	protected ChessPiece[] kings;
 	
 //	public SimpleChessEngine(Scope fromScope) {
 //		try {
@@ -22,6 +22,7 @@ public class SimpleChessEngine implements SelfSerializable, Cloneable
 	
 	public SimpleChessEngine(int width, int height, int onTurn) {
 		pieces = new ChessPiece[height][width];
+		this.kings = new ChessPiece[2];
 		this.onTurn = onTurn;
 	}
 	
@@ -88,8 +89,8 @@ public class SimpleChessEngine implements SelfSerializable, Cloneable
 		for (int[] col : getMovmentMetrix(x, y, checkIfKingInCheck))
 			for (int i : col)
 				if (i > 0)
-					return false;
-		return true;
+					return true;
+		return false;
 	}
 	
 	public boolean isOnTurn(int color) {
@@ -106,7 +107,10 @@ public class SimpleChessEngine implements SelfSerializable, Cloneable
 	}
 	
 	public ChessPiece move(int fromX, int fromY, int toX, int toY) {
-		return get(fromX, fromY).moveTo(toX, toY);
+		ChessPiece piece = get(fromX, fromY);
+		if (piece == null)
+			return piece;
+		return piece.moveTo(toX, toY);
 	}
 	
 	public boolean moveIfCan(int fromX, int fromY, int toX, int toY) {
@@ -131,13 +135,11 @@ public class SimpleChessEngine implements SelfSerializable, Cloneable
 	}
 	
 	public ChessPiece remove(int x, int y) {
-		if (isInBounds(x, y))
-		{
-			ChessPiece piece = get(x, y);
-			pieces[y][x] = null;
+		ChessPiece piece = get(x, y);
+		if (piece == null)
 			return piece;
-		}
-		return null;
+		pieces[y][x] = null;
+		return piece;
 	}
 
 	public void remove(ChessPiece removePiece) {

@@ -11,9 +11,4 @@ public class Bishop extends ChessPiece
 	public int[][] generateMovmentMetrix(int[][] newEmptyMetrix, boolean checkIfKingInCheck) {
 		return movmentMetrix = generateMovmentFromDirs(this, newEmptyMetrix, DIAGONAL_DIRS, checkIfKingInCheck);
 	}
-	
-	@Override
-	protected ChessPiece newInstance(SimpleChessEngine board) {
-		return new Bishop(board, 0, 0, 0);
-	}
 }

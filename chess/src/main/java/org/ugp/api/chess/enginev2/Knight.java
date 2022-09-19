@@ -2,7 +2,7 @@ package org.ugp.api.chess.enginev2;
 
 public class Knight extends ChessPiece
 {
-	public static int[][] L_MOVMENT_OFFSETS = {
+	public static final int[][] L_MOVMENT_OFFSETS = {
 		{1, 2},
 		{-1, 2},
 		{1, -2},
@@ -20,11 +20,6 @@ public class Knight extends ChessPiece
 	@Override
 	public int[][] generateMovmentMetrix(int[][] newEmptyMetrix, boolean checkIfKingInCheck) {
 		return movmentMetrix = generateMovmentFromOffsets(this, newEmptyMetrix, L_MOVMENT_OFFSETS, checkIfKingInCheck);
-	}
-	
-	@Override
-	protected ChessPiece newInstance(SimpleChessEngine board) {
-		return new Knight(board, 0, 0, 0);
 	}
 }
 

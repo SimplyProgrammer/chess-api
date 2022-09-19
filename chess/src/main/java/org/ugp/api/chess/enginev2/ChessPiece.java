@@ -56,18 +56,14 @@ public class ChessPiece implements SelfSerializable, Cloneable
 	}
 	
 	public final ChessPiece clone(SimpleChessEngine board) {
-		ChessPiece clone = newInstance(board);
-		clone.x = getX();
-		clone.y = getY();
-		clone.color = getColor();
-		clone.type = getType();
-		clone.moveCount = getMoveCount();
-		clone.movmentMetrix = getMovmentMetrix();
-		return clone;
-	}
-	
-	protected ChessPiece newInstance(SimpleChessEngine board) {
-		return new ChessPiece(board, null, 0, 0, 0);
+		try {
+			ChessPiece clone = (ChessPiece) super.clone();
+			clone.myBoard = board;
+			return clone;
+		} catch (CloneNotSupportedException e) {
+			e.printStackTrace();
+			return null;
+		}
 	}
 	
 	public int[][] generateMovmentMetrix(int[][] newEmptyMetrix, boolean checkIfKingInCheck) {
@@ -122,8 +118,8 @@ public class ChessPiece implements SelfSerializable, Cloneable
 		ChessPiece piece = myBoard.put(this, x, y);
 		if (piece != null)
 		{
+			myBoard.remove(this);
 			this.moveCount++;
-			myBoard.remove(getX(), getY());
 			this.x = x;
 			this.y = y;
 		}
@@ -209,36 +205,36 @@ public class ChessPiece implements SelfSerializable, Cloneable
 		return newEmptyMetrix;
 	}
 
-	public static boolean canMoveStraight(ChessPiece piece, int x, int y) {
+	public static boolean canMoveStraight(ChessPiece piece, int toX, int toY) {
 		int myX = piece.getX(), myY = piece.getY();
-		if (y == myY) //Horizontal
+		if (toY == myY) //Horizontal
 		{
-			if (x > myX) 
+			if (toX > myX) 
 			{
-				for (int i = 1; i < x - myX; i++) //Go right
+				for (int i = 1; i < toX - myX; i++) //Go right
 					if (piece.getNeighbour(i, 0) != null)
 						return false;
 			}
 			else
 			{
-				for (int i = 1; i < myX - x; i++) //Go left
+				for (int i = 1; i < myX - toX; i++) //Go left
 					if (piece.getNeighbour(-i, 0) != null)
 						return false;
 			}
 			return true;
 		}
 		
-		if (x == myX) //Vertical
+		if (toX == myX) //Vertical
 		{
-			if (y > myY)
+			if (toY > myY)
 			{
-				for (int i = 1; i < y - myY; i++) //Go down
+				for (int i = 1; i < toY - myY; i++) //Go down
 					if (piece.getNeighbour(0, i) != null)
 						return false;
 			}
 			else
 			{
-				for (int i = 1; i < myY - y; i++) //Go top
+				for (int i = 1; i < myY - toY; i++) //Go top
 					if (piece.getNeighbour(0, -i) != null)
 						return false;
 			}
@@ -248,14 +244,14 @@ public class ChessPiece implements SelfSerializable, Cloneable
 		return false;
 	}
 	
-	public static boolean canMoveDiagonal(ChessPiece piece, int x, int y) {
+	public static boolean canMoveDiagonal(ChessPiece piece, int toX, int toY) {
 		int myX = piece.getX(), myY = piece.getY();
-		if (Math.abs(x - myX) == Math.abs(y - myY)) //Diagonal
+		if (Math.abs(toX - myX) == Math.abs(toY - myY)) //Diagonal
 		{
-			if (x > myX) //Go right
+			if (toX > myX) //Go right
 			{
-				int dist = x - myX;
-				if (y > myY)
+				int dist = toX - myX;
+				if (toY > myY)
 				{
 					for (int i = 1; i < dist; i++) //Go down
 						if (piece.getNeighbour(i, i) != null)
@@ -270,8 +266,8 @@ public class ChessPiece implements SelfSerializable, Cloneable
 			}
 			else //Go left
 			{
-				int dist = myX - x;
-				if (y > myY)
+				int dist = myX - toX;
+				if (toY > myY)
 				{
 					for (int i = 1; i < dist; i++) //Go down
 						if (piece.getNeighbour(-i, i) != null)

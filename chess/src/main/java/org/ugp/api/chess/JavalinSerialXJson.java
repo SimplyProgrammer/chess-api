@@ -6,7 +6,6 @@ import java.io.InputStream;
 import org.ugp.serialx.JsonSerializer;
 
 import io.javalin.plugin.json.JsonMapper;
-import io.javalin.plugin.json.PipedStreamUtil;
 
 public class JavalinSerialXJson implements JsonMapper {
 

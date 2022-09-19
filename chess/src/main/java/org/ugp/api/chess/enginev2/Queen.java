@@ -10,9 +10,4 @@ public class Queen extends ChessPiece
 	public int[][] generateMovmentMetrix(int[][] newEmptyMetrix, boolean checkIfKingInCheck) {
 		return movmentMetrix = generateMovmentFromDirs(this, generateMovmentFromDirs(this, newEmptyMetrix, STRAIGHT_DIRS, checkIfKingInCheck), DIAGONAL_DIRS, checkIfKingInCheck);
 	}
-	
-	@Override
-	protected ChessPiece newInstance(SimpleChessEngine board) {
-		return new Queen(board, 0, 0, 0);
-	}
 }

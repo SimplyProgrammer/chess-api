@@ -10,9 +10,4 @@ public class Rook extends ChessPiece
 	public int[][] generateMovmentMetrix(int[][] newEmptyMetrix, boolean checkIfKingInCheck) {
 		return movmentMetrix = generateMovmentFromDirs(this, newEmptyMetrix, STRAIGHT_DIRS, checkIfKingInCheck);
 	}
-	
-	@Override
-	protected ChessPiece newInstance(SimpleChessEngine board) {
-		return new Rook(board, 0, 0, 0);
-	}
 }
