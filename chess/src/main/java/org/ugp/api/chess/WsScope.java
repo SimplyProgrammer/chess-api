@@ -11,7 +11,6 @@ public class WsScope extends Scope {
 
 	protected String type;
 	
-	
 	public WsScope(Map<String, ?> variablesMap, Object... values) 
 	{
 		super(variablesMap, values);
@@ -20,8 +19,10 @@ public class WsScope extends Scope {
 	
 	public WsScope(String type, Object source)
 	{
-		super(source);
+		super();
 		setType(type);
+		put("type", type);
+		put("data", source);
 	}
 	
 	public String getType() {

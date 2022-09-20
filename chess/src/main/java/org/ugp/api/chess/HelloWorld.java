@@ -2,6 +2,7 @@
 package org.ugp.api.chess;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
 import org.ugp.api.chess.HelloWorld.ChessGameSession;
@@ -11,6 +12,7 @@ import org.ugp.serialx.Scope;
 import org.ugp.serialx.protocols.SelfSerializable;
 
 import io.javalin.Javalin;
+import io.javalin.websocket.WsContext;
 
 public class HelloWorld 
 {
@@ -19,7 +21,7 @@ public class HelloWorld
 			config.jsonMapper(new JavalinSerialXJson());
 			config.contextPath = "/api/v1/";
 		    config.enableCorsForAllOrigins();
-		}).start("192.168.68.125", 8989);
+		}).start("192.168.100.174", 8989);
 
 //		app.ws("/chat", ws -> {
 //            ws.onConnect(ctx -> {
@@ -51,6 +53,7 @@ public class HelloWorld
 		
 		protected Javalin app;
 		protected String sessionID;
+		protected List<WsContext> players = new ArrayList<>();
 		protected SimpleChessEngine engine;
 		
 		@Override
@@ -95,8 +98,10 @@ public class HelloWorld
 			app = on;
 			app.ws("/game/" + getSessionId(), ws -> {
 	            ws.onConnect(ctx -> {
-	            	System.out.println("Conected " + ctx.getSessionId() + " " + ctx.host());
-	            	ctx.send(new WsScope("init", this));
+	            	 if (players.add(ctx)) {
+		            	System.out.println("Conected " + ctx.getSessionId() + " " + ctx.host());
+		            	ctx.send(new WsScope("init", this));
+	            	 }
 	            });
 	            ws.onMessage(ctx -> {
 	            	WsScope req = ctx.messageAsClass(WsScope.class);
@@ -111,11 +116,11 @@ public class HelloWorld
 							return;
 						}
 
-						Scope checkInfo = new Scope();
+						Scope moveInfo = new Scope();
 						ChessPiece king = engine.getKing(engine.getOnTurn());
 						boolean isCheck = engine.isThreatened(king.getX(), king.getY(), false), canMove = false;
 
-						checkInfo.put("isCheck", isCheck);
+						moveInfo.put("isCheck", isCheck);
 						xloop: for (int xp = 0; xp < engine.getWidth(); xp++) {
 							for (int yp = 0; yp < engine.getHeight(); yp++) {
 								if (engine.isOnTurn(xp, yp) && engine.hasAnyMove(xp, yp, true))
@@ -125,23 +130,25 @@ public class HelloWorld
 								}	
 							}
 						}
-						checkInfo.put("canMove", canMove);
-						checkInfo.put("isStalemate", !canMove && !isCheck);
+						moveInfo.put("canMove", canMove);
+						moveInfo.put("isStalemate", !canMove && !isCheck);
 
-						ctx.send(checkInfo);
+						ctx.send(new WsScope("move", moveInfo));
 	            	}
 	            	else if ("movmentMetrix".equals(type)) {
 	            		int x = req.getInt("x", -1), y = req.getInt("y", -1);
-					
+
 //						double t0 = System.nanoTime(), t;
 //						engine.getMovmentMetrix(x, y, true);
 //						 t = System.nanoTime();
 //						 System.out.println((t-t0)/1000000);
-						 ctx.send(engine.getMovmentMetrix(x, y, true));
+	            		ctx.send(new WsScope("movmentMetrix", engine.getMovmentMetrix(x, y, true)));
 	            	}
 	            });
 	            ws.onClose(ctx -> {
-	               System.out.println("Closed " + ctx.getSessionId());
+	            	if (players.remove(ctx)) {
+	            		System.out.println("Closed " + ctx.getSessionId());
+	            	}
 	            });
 	        });
 //			app.routes(() -> {
