@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-import org.ugp.api.chess.HelloWorld.ChessGameSession;
 import org.ugp.api.chess.enginev2.ChessPiece;
 import org.ugp.api.chess.enginev2.SimpleChessEngine;
 import org.ugp.serialx.Scope;
@@ -21,7 +20,7 @@ public class HelloWorld
 			config.jsonMapper(new JavalinSerialXJson());
 			config.contextPath = "/api/v1/";
 		    config.enableCorsForAllOrigins();
-		}).start("192.168.100.174", 8989);
+		}).start(8989);
 
 //		app.ws("/chat", ws -> {
 //            ws.onConnect(ctx -> {
@@ -108,9 +107,10 @@ public class HelloWorld
 	            	
 	            	String type = req.getType();
 	            	if ("move".equals(type)) {
-	            		int x = req.getInt("x", -1), y = req.getInt("y", -1);
-						int newX = req.getInt("newX", -1), newY = req.getInt("newY", -1);
-						if (!engine.moveIfCan(x, y, newX, newY))
+	            		int fromX = req.getInt("fromX", -1), fromY = req.getInt("fromY", -1);
+						int toX = req.getInt("toX", -1), toY = req.getInt("toY", -1);
+						
+						if (!engine.moveIfCan(fromX, fromY, toX, toY))
 						{
 							ctx.send("invalid");
 							return;
@@ -123,8 +123,7 @@ public class HelloWorld
 						moveInfo.put("isCheck", isCheck);
 						xloop: for (int xp = 0; xp < engine.getWidth(); xp++) {
 							for (int yp = 0; yp < engine.getHeight(); yp++) {
-								if (engine.isOnTurn(xp, yp) && engine.hasAnyMove(xp, yp, true))
-								{
+								if (engine.isOnTurn(xp, yp) && engine.hasAnyMove(xp, yp, true)) {
 									canMove = true;
 									break xloop;
 								}	
@@ -132,7 +131,7 @@ public class HelloWorld
 						}
 						moveInfo.put("canMove", canMove);
 						moveInfo.put("isStalemate", !canMove && !isCheck);
-
+						
 						ctx.send(new WsScope("move", moveInfo));
 	            	}
 	            	else if ("movmentMetrix".equals(type)) {
