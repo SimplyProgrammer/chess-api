@@ -99,11 +99,11 @@ public class HelloWorld
 	            ws.onConnect(ctx -> {
 	            	 if (players.add(ctx)) {
 		            	System.out.println("Conected " + ctx.getSessionId() + " " + ctx.host());
-		            	ctx.send(new WsScope("init", this));
+		            	ctx.send(new WsMessage("init", this));
 	            	 }
 	            });
 	            ws.onMessage(ctx -> {
-	            	WsScope req = ctx.messageAsClass(WsScope.class);
+	            	WsMessage req = ctx.messageAsClass(WsMessage.class);
 	            	
 	            	String type = req.getType();
 	            	if ("move".equals(type)) {
@@ -116,11 +116,10 @@ public class HelloWorld
 							return;
 						}
 
-						Scope moveInfo = new Scope();
 						ChessPiece king = engine.getKing(engine.getOnTurn());
 						boolean isCheck = engine.isThreatened(king.getX(), king.getY(), false), canMove = false;
 
-						moveInfo.put("isCheck", isCheck);
+						req.put("isCheck", isCheck);
 						xloop: for (int xp = 0; xp < engine.getWidth(); xp++) {
 							for (int yp = 0; yp < engine.getHeight(); yp++) {
 								if (engine.isOnTurn(xp, yp) && engine.hasAnyMove(xp, yp, true)) {
@@ -129,10 +128,10 @@ public class HelloWorld
 								}	
 							}
 						}
-						moveInfo.put("canMove", canMove);
-						moveInfo.put("isStalemate", !canMove && !isCheck);
+						req.put("canMove", canMove);
+						req.put("isStalemate", !canMove && !isCheck);
 						
-						ctx.send(new WsScope("move", moveInfo));
+						ctx.send(req);
 	            	}
 	            	else if ("movmentMetrix".equals(type)) {
 	            		int x = req.getInt("x", -1), y = req.getInt("y", -1);
@@ -141,7 +140,7 @@ public class HelloWorld
 //						engine.getMovmentMetrix(x, y, true);
 //						 t = System.nanoTime();
 //						 System.out.println((t-t0)/1000000);
-	            		ctx.send(new WsScope("movmentMetrix", engine.getMovmentMetrix(x, y, true)));
+	            		ctx.send(new WsMessage("movmentMetrix", engine.getMovmentMetrix(x, y, true)));
 	            	}
 	            });
 	            ws.onClose(ctx -> {
