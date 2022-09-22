@@ -131,7 +131,12 @@ public class HelloWorld
 						req.put("canMove", canMove);
 						req.put("isStalemate", !canMove && !isCheck);
 						
-						ctx.send(req);
+						for (WsContext pl : players) {
+							if (pl.session != ctx.session)
+								pl.send(new WsMessage("notifyMove", req));
+						}
+						
+						ctx.send(new WsMessage("move", req));
 	            	}
 	            	else if ("movmentMetrix".equals(type)) {
 	            		int x = req.getInt("x", -1), y = req.getInt("y", -1);
@@ -211,6 +216,10 @@ public class HelloWorld
 //			});
 
 			return this;
+		}
+
+		public List<WsContext> getPlayers() {
+			return players;
 		}
 
 		public Javalin getApp() {
