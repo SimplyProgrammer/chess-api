@@ -130,6 +130,7 @@ public class HelloWorld
 						}
 						req.put("canMove", canMove);
 						req.put("isStalemate", !canMove && !isCheck);
+//						req.put("onTurn", engine.getOnTurn());
 						
 						for (WsContext pl : players) {
 							if (pl.session != ctx.session)
