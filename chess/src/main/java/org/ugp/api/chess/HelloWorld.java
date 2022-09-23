@@ -2,7 +2,9 @@
 package org.ugp.api.chess;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.UUID;
 
 import org.ugp.api.chess.enginev2.ChessPiece;
@@ -36,24 +38,34 @@ public class HelloWorld
 //            });
 //        });
 		
-		var<ChessGameSession> sessions = new ArrayList<>();
-		app.get("/game/new", ctx -> {
-			var newSession = new ChessGameSession();
+		List<ChessGameSession> sessions = new ArrayList<>();
+		app.get("/game/join", ctx -> {
+			for (ChessGameSession session : sessions) {
+				if (session.getPlayers().size() <= 1 && session.getTotalTurns() <= 1)
+				{
+					ctx.json(session.getSessionId());
+					return;
+				}
+			}
+
+			var newSession = new ChessGameSession(ChessPiece.WHITE);
 			sessions.add(newSession.begin(app));
 			ctx.json(newSession.getSessionId());
 		});
 
-		app.get("/games", ctx -> {
-			ctx.json(sessions);
-		});
+//		app.get("/games", ctx -> {
+//			ctx.json(sessions);
+//		});
 	}
 	
 	public static class ChessGameSession implements SelfSerializable {
 		
+		public final int whoStarts;
 		protected Javalin app;
 		protected String sessionID;
-		protected List<WsContext> players = new ArrayList<>();
+		protected Map<String, WsContext> players = new HashMap<>();
 		protected SimpleChessEngine engine;
+		protected int totalTurns;
 		
 		@Override
 		public Object[] serialize() {
@@ -66,10 +78,10 @@ public class HelloWorld
 //			id = UUID.fromString(fromScope.get("session"));
 //		}
 
-		public ChessGameSession() {
-			engine = new SimpleChessEngine(8, 8, ChessPiece.WHITE);
+		public ChessGameSession(int whoStarts) {
+			engine = new SimpleChessEngine(8, 8, this.whoStarts = whoStarts);
 			sessionID = UUID.randomUUID() + "-" + hashCode();
-			
+
 			for (int x = 0; x < 8; x++) {
 				engine.put("p", ChessPiece.BLACK, x, 1);
 				engine.put("p", ChessPiece.WHITE, x, 6);
@@ -97,11 +109,17 @@ public class HelloWorld
 			app = on;
 			app.ws("/game/" + getSessionId(), ws -> {
 	            ws.onConnect(ctx -> {
-	            	 if (players.add(ctx)) {
-		            	System.out.println("Conected " + ctx.getSessionId() + " " + ctx.host());
-		            	ctx.send(new WsMessage("init", this));
-	            	 }
+	            	 int size = players.size();
+			    	 if (players.add(ctx)) {
+			        	System.out.println("Conected " + ctx.getSessionId() + " " + ctx.host());
+			        	
+			        	
+			        	WsMessage initMessage = size > 2 ? new WsMessage("init", "full") : new WsMessage("init", this);
+			        	initMessage.put("myColor", size + whoStarts % 2);
+			        	ctx.send(initMessage);
+			    	 }
 	            });
+	            
 	            ws.onMessage(ctx -> {
 	            	WsMessage req = ctx.messageAsClass(WsMessage.class);
 	            	
@@ -138,10 +156,11 @@ public class HelloWorld
 						}
 						
 						ctx.send(new WsMessage("move", req));
+						totalTurns++;
 	            	}
 	            	else if ("movmentMetrix".equals(type)) {
+	            		
 	            		int x = req.getInt("x", -1), y = req.getInt("y", -1);
-
 //						double t0 = System.nanoTime(), t;
 //						engine.getMovmentMetrix(x, y, true);
 //						 t = System.nanoTime();
@@ -149,6 +168,7 @@ public class HelloWorld
 	            		ctx.send(new WsMessage("movmentMetrix", engine.getMovmentMetrix(x, y, true)));
 	            	}
 	            });
+	            
 	            ws.onClose(ctx -> {
 	            	if (players.remove(ctx)) {
 	            		System.out.println("Closed " + ctx.getSessionId());
@@ -218,7 +238,11 @@ public class HelloWorld
 
 			return this;
 		}
-
+		
+		public int getTotalTurns() {
+			return totalTurns;
+		}
+ 
 		public List<WsContext> getPlayers() {
 			return players;
 		}
