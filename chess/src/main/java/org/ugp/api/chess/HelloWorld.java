@@ -2,9 +2,7 @@
 package org.ugp.api.chess;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.UUID;
 
 import org.ugp.api.chess.enginev2.ChessPiece;
@@ -63,7 +61,7 @@ public class HelloWorld
 		public final int whoStarts;
 		protected Javalin app;
 		protected String sessionID;
-		protected Map<String, WsContext> players = new HashMap<>();
+		protected List<WsContext> players = new ArrayList<>();
 		protected SimpleChessEngine engine;
 		protected int totalTurns;
 		
@@ -109,15 +107,17 @@ public class HelloWorld
 			app = on;
 			app.ws("/game/" + getSessionId(), ws -> {
 	            ws.onConnect(ctx -> {
-	            	 int size = players.size();
-			    	 if (players.add(ctx)) {
-			        	System.out.println("Conected " + ctx.getSessionId() + " " + ctx.host());
-			        	
-			        	
-			        	WsMessage initMessage = size > 2 ? new WsMessage("init", "full") : new WsMessage("init", this);
-			        	initMessage.put("myColor", size + whoStarts % 2);
-			        	ctx.send(initMessage);
-			    	 }
+					int index = addPlayer(ctx);
+					if (index < 0) {
+						 ctx.closeSession();
+						 return;
+					}
+	            		
+		        	System.out.println("Conected " + ctx.getSessionId() + " " + ctx.host());
+		        	
+		        	WsMessage initMessage = new WsMessage("init", this);
+		        	initMessage.put("myColor", index > 1 ? index : (index + whoStarts) % 2);
+		        	ctx.send(initMessage);
 	            });
 	            
 	            ws.onMessage(ctx -> {
@@ -151,7 +151,7 @@ public class HelloWorld
 //						req.put("onTurn", engine.getOnTurn());
 						
 						for (WsContext pl : players) {
-							if (pl.session != ctx.session)
+							if (pl != null && pl.session != ctx.session)
 								pl.send(new WsMessage("notifyMove", req));
 						}
 						
@@ -170,7 +170,7 @@ public class HelloWorld
 	            });
 	            
 	            ws.onClose(ctx -> {
-	            	if (players.remove(ctx)) {
+	            	if (removePlayer(ctx) > -1) {
 	            		System.out.println("Closed " + ctx.getSessionId());
 	            	}
 	            });
@@ -237,6 +237,28 @@ public class HelloWorld
 //			});
 
 			return this;
+		}
+		
+		protected int addPlayer(WsContext player) {
+        	for (int i = 0; i < players.size(); i++) {
+				if (players.get(i) == null) {
+					players.set(i, player);
+					return i;
+				}
+			}
+        	
+        	int i = players.size();
+        	if (players.add(player))
+        		return i;
+        	return -1;
+		}
+		
+		protected int removePlayer(WsContext player) {
+        	int index = players.indexOf(player);
+        	if (index > -1) {
+        		players.set(index, null);
+        	}
+        	return index;
 		}
 		
 		public int getTotalTurns() {
