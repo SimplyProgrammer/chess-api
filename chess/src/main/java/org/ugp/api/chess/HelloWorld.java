@@ -163,8 +163,8 @@ public class HelloWorld
 	            		int x = req.getInt("x", -1), y = req.getInt("y", -1);
 //						double t0 = System.nanoTime(), t;
 //						engine.getMovmentMetrix(x, y, true);
-//						 t = System.nanoTime();
-//						 System.out.println((t-t0)/1000000);
+//						t = System.nanoTime();
+//						System.out.println((t-t0)/1000000);
 	            		ctx.send(new WsMessage("movmentMetrix", engine.getMovmentMetrix(x, y, true)));
 	            	}
 	            });
