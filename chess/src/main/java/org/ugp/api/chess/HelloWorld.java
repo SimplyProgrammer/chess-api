@@ -3,6 +3,7 @@ package org.ugp.api.chess;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.UUID;
 
 import org.ugp.api.chess.enginev2.ChessPiece;
@@ -151,11 +152,9 @@ public class HelloWorld
 //						req.put("onTurn", engine.getOnTurn());
 						
 						for (WsContext pl : players) {
-							if (pl != null && pl.session != ctx.session)
-								pl.send(new WsMessage("notifyMove", req));
+							if (pl != null)
+								pl.send(new WsMessage("move", req));
 						}
-						
-						ctx.send(new WsMessage("move", req));
 						totalTurns++;
 	            	}
 	            	else if ("movmentMetrix".equals(type)) {
@@ -254,11 +253,11 @@ public class HelloWorld
 		}
 		
 		protected int removePlayer(WsContext player) {
-        	int index = players.indexOf(player);
-        	if (index > -1) {
-        		players.set(index, null);
-        	}
-        	return index;
+        	for (int i = 0; i < players.size(); i++) {
+				if (Objects.equals(player, players.get(i)))
+					return i;
+			}
+			return -1;
 		}
 		
 		public int getTotalTurns() {
