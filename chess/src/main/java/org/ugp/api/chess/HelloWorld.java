@@ -3,7 +3,6 @@ package org.ugp.api.chess;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 import java.util.UUID;
 
 import org.ugp.api.chess.enginev2.ChessPiece;
@@ -108,13 +107,14 @@ public class HelloWorld
 			app = on;
 			app.ws("/game/" + getSessionId(), ws -> {
 	            ws.onConnect(ctx -> {
+	            	ctx.session.setIdleTimeout(10 * 60 * 1000);
 					int index = addPlayer(ctx);
 					if (index < 0) {
 						 ctx.closeSession();
 						 return;
 					}
 	            		
-		        	System.out.println("Conected " + ctx.getSessionId() + " " + ctx.host());
+		        	System.out.println("Conected " + ctx.getSessionId() + " " + ctx.host() + " " + players);
 		        	
 		        	WsMessage initMessage = new WsMessage("init", this);
 		        	initMessage.put("myColor", index > 1 ? index : (index + whoStarts) % 2);
@@ -123,7 +123,7 @@ public class HelloWorld
 	            
 	            ws.onMessage(ctx -> {
 	            	WsMessage req = ctx.messageAsClass(WsMessage.class);
-	            	
+	         
 	            	String type = req.getType();
 	            	if ("move".equals(type)) {
 	            		int fromX = req.getInt("fromX", -1), fromY = req.getInt("fromY", -1);
@@ -170,7 +170,7 @@ public class HelloWorld
 	            
 	            ws.onClose(ctx -> {
 	            	if (removePlayer(ctx) > -1) {
-	            		System.out.println("Closed " + ctx.getSessionId());
+	            		System.out.println("Closed " + ctx.getSessionId() + " " + players);
 	            	}
 	            });
 	        });
@@ -238,7 +238,7 @@ public class HelloWorld
 			return this;
 		}
 		
-		protected int addPlayer(WsContext player) {
+		protected synchronized int addPlayer(WsContext player) {
         	for (int i = 0; i < players.size(); i++) {
 				if (players.get(i) == null) {
 					players.set(i, player);
@@ -252,10 +252,16 @@ public class HelloWorld
         	return -1;
 		}
 		
-		protected int removePlayer(WsContext player) {
+		protected synchronized int removePlayer(WsContext player) {
+			if (player == null)
+				return -1;
+			
         	for (int i = 0; i < players.size(); i++) {
-				if (Objects.equals(player, players.get(i)))
+        		WsContext current = players.get(i);
+				if (current != null && player.equals(current)) {
+					players.set(i, null);
 					return i;
+				}
 			}
 			return -1;
 		}
