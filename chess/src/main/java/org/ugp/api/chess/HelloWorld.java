@@ -34,7 +34,7 @@ public class HelloWorld
 //            ws.onClose(ctx -> {
 //               System.out.println("Closed " + ctx.getSessionId());
 //            });
-//        });
+//       	});
 		
 		List<ChessGameSession> sessions = new ArrayList<>();
 		app.get("/game/join", ctx -> {
@@ -81,21 +81,23 @@ public class HelloWorld
 			sessionID = UUID.randomUUID() + "-" + hashCode();
 
 			for (int x = 0; x < 8; x++) {
-				engine.put("p", ChessPiece.BLACK, x, 1);
-				engine.put("p", ChessPiece.WHITE, x, 6);
+				engine.put("p", ChessPiece.BLACK, x, 4);
+//				engine.put("p", ChessPiece.WHITE, x, 6);
 			}
 			
 			
-			for (int i = 0; i < 2; i++) {
-				engine.put("r", i, 0, i * 7);
-				engine.put("n", i, 1, i * 7);
-				engine.put("b", i, 2, i * 7);
-				engine.put("q", i, 3, i * 7);
-				engine.put("k", i, 4, i * 7);
-				engine.put("b", i, 5, i * 7);
-				engine.put("n", i, 6, i * 7);
-				engine.put("r", i, 7, i * 7);
-			}
+//			for (int i = 0; i < 2; i++) {
+//				engine.put("r", i, 0, i * 7);
+//				engine.put("n", i, 1, i * 7);
+//				engine.put("b", i, 2, i * 7);
+//				engine.put("q", i, 3, i * 7);
+//				engine.put("k", i, 4, i * 7);
+//				engine.put("b", i, 5, i * 7);
+//				engine.put("n", i, 6, i * 7);
+//				engine.put("r", i, 7, i * 7);
+//			}
+			engine.put("k", 1, 4, 1 * 7);;
+			engine.put("k", 0, 4, 0 * 7);;
 //			engine.isThreatened(0, 0, true);
 //			double t0 = System.nanoTime(), t;
 //			engine.isThreatened(0, 0, true);
@@ -108,6 +110,7 @@ public class HelloWorld
 			app.ws("/game/" + getSessionId(), ws -> {
 	            ws.onConnect(ctx -> {
 	            	ctx.session.setIdleTimeout(10 * 60 * 1000);
+	            	
 					int index = addPlayer(ctx);
 					if (index < 0) {
 						 ctx.closeSession();
@@ -129,7 +132,21 @@ public class HelloWorld
 	            		int fromX = req.getInt("fromX", -1), fromY = req.getInt("fromY", -1);
 						int toX = req.getInt("toX", -1), toY = req.getInt("toY", -1);
 						
-						if (!engine.moveIfCan(fromX, fromY, toX, toY))
+						if (engine.moveIfCan(fromX, fromY, toX, toY))
+						{
+							String promote = req.getString("promote", null);
+							if (promote != null && (toY >= engine.getHeight() - 1 || toY <= 0))
+							{
+								ChessPiece piece = engine.get(toX, toY);
+								if (!piece.getType().equals("p"))
+								{
+									ctx.send("promotion invalid");
+									return;
+								}
+								engine.put(promote, piece.getColor(), toX, toY);
+							}
+						}
+						else 
 						{
 							ctx.send("invalid");
 							return;

@@ -39,7 +39,7 @@ public class ChessPiece implements SelfSerializable, Cloneable
 	
 	@Override
 	public String toString() {
-		return type;
+		return getClass().getName() + "[" + getType() + ", " + (getColor() == BLACK ? "Black" : "White") + ", " + getX() + ", " + getY() + "]";
 	}
 	
 	@Override

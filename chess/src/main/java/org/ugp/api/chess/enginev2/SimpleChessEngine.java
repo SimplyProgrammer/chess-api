@@ -60,7 +60,7 @@ public class SimpleChessEngine implements SelfSerializable, Cloneable
 			str += y;
 			for (int x = 0; x < getWidth(); x++) {
 				ChessPiece piece = get(x, y);
-				str += piece == null ? '#' : piece;
+				str += piece == null ? '#' : piece.getType();
 			}
 			str += "\n";
 		}
@@ -118,7 +118,7 @@ public class SimpleChessEngine implements SelfSerializable, Cloneable
 			ChessPiece piece = get(fromX, fromY).moveToIfCan(toX, toY);
 			if (piece != null)
 			{
-				onTurn ^= 1;
+				endTurn();
 				return true;
 			}
 		}
@@ -147,17 +147,17 @@ public class SimpleChessEngine implements SelfSerializable, Cloneable
 	}
 
 	public ChessPiece put(String type, int color, int x, int y) {
-		if (type == ChessPiece.KING)
+		if (type.equals(ChessPiece.KING))
 			return put(new King(this, color, x, y));
-		if (type == ChessPiece.QUEEN)
+		if (type.equals(ChessPiece.QUEEN))
 			return put(new Queen(this, color, x, y));
-		if (type == ChessPiece.KNIGHT)
+		if (type.equals(ChessPiece.KNIGHT))
 			return put(new Knight(this, color, x, y));
-		if (type == ChessPiece.BISHOP)
+		if (type.equals(ChessPiece.BISHOP))
 			return put(new Bishop(this, color, x, y));
-		if (type == ChessPiece.ROOK)
+		if (type.equals(ChessPiece.ROOK))
 			return put(new Rook(this, color, x, y));
-		if (type == ChessPiece.PAWN)
+		if (type.equals(ChessPiece.PAWN))
 			return put(new Pawn(this, color, x, y));
 		return put(new ChessPiece(this, type, color, x, y));
 	}
@@ -174,6 +174,10 @@ public class SimpleChessEngine implements SelfSerializable, Cloneable
 			return pieces[y][x] = chessPiece;
 		}
 		return null;
+	}
+	
+	public int endTurn() {
+		return onTurn ^= 1;
 	}
 	
 	public ChessPiece getKing(int color) {
