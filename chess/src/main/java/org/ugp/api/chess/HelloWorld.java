@@ -64,11 +64,13 @@ public class HelloWorld
 		protected List<WsContext> players = new ArrayList<>();
 		protected SimpleChessEngine engine;
 		protected int totalTurns;
+		protected Scope lastMove;
 		
 		@Override
 		public Object[] serialize() {
 			var args = engine.serialize();
 			((Scope) args[0]).put("session", getSessionId());
+			((Scope) args[0]).put("lastMove", getLastMove());
 			return args;
 		}
 		
@@ -78,13 +80,12 @@ public class HelloWorld
 
 		public ChessGameSession(int whoStarts) {
 			engine = new SimpleChessEngine(8, 8, this.whoStarts = whoStarts);
-			sessionID = UUID.randomUUID() + "-" + hashCode();
+			sessionID = System.currentTimeMillis() + "-" + hashCode();
 
 			for (int x = 0; x < 8; x++) {
 				engine.put("p", ChessPiece.BLACK, x, 4);
 //				engine.put("p", ChessPiece.WHITE, x, 6);
 			}
-			
 			
 //			for (int i = 0; i < 2; i++) {
 //				engine.put("r", i, 0, i * 7);
@@ -167,6 +168,8 @@ public class HelloWorld
 						req.put("canMove", canMove);
 						req.put("isStalemate", !canMove && !isCheck);
 //						req.put("onTurn", engine.getOnTurn());
+						
+						lastMove = req.into(Scope.class, "fromX", "fromY", "toX", "toY");
 						
 						for (WsContext pl : players) {
 							if (pl != null)
@@ -281,6 +284,10 @@ public class HelloWorld
 				}
 			}
 			return -1;
+		}
+		
+		public Scope getLastMove() {
+			return lastMove;
 		}
 		
 		public int getTotalTurns() {
