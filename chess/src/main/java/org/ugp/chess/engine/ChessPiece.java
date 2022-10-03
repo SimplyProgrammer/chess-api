@@ -1,4 +1,4 @@
-package org.ugp.api.chess.enginev2;
+package org.ugp.chess.engine;
 
 import org.ugp.serialx.Scope;
 import org.ugp.serialx.protocols.SelfSerializable;

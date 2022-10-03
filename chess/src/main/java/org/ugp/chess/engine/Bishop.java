@@ -1,4 +1,4 @@
-package org.ugp.api.chess.enginev2;
+package org.ugp.chess.engine;
 
 
 public class Bishop extends ChessPiece 

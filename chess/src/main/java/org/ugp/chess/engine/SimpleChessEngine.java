@@ -1,4 +1,4 @@
-package org.ugp.api.chess.enginev2;
+package org.ugp.chess.engine;
 
 import org.ugp.serialx.Scope;
 import org.ugp.serialx.protocols.SelfSerializable;
@@ -117,10 +117,7 @@ public class SimpleChessEngine implements SelfSerializable, Cloneable
 		if (isOnTurn(fromX, fromY)) {
 			ChessPiece piece = get(fromX, fromY).moveToIfCan(toX, toY);
 			if (piece != null)
-			{
-				endTurn();
 				return true;
-			}
 		}
 		return false;
 	}
@@ -194,6 +191,12 @@ public class SimpleChessEngine implements SelfSerializable, Cloneable
 		if (!isThreatened(king.getX(), king.getY(), false))
 			return false;
 		return hasAnyMove(king.getX(), king.getY(), true);
+	}
+	
+	public void reset(int onTurn) {
+		pieces = new ChessPiece[getWidth()][getHeight()];
+		this.kings = new ChessPiece[2];
+		this.onTurn = onTurn;
 	}
 	
 	public int getWidth() {
